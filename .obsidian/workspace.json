@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "e11f03d6c998ecb4",
+    "type": "split",
+    "children": [
+      {
+        "id": "34363ec7aaf230dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "858f49e4b483dcb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ai知识库/政策解读/【AI学习】智能经济新形态与一人公司黄金时代全解析.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "【AI学习】智能经济新形态与一人公司黄金时代全解析"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fa567231a937f9fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "946078d58a2f9de8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0473df7846b6bc6d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "81e7a32c2e99e7c0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e962f4a9895f8109",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f9614e444af7093c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4991371ff895d645",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bea7df551673bd43",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ai知识库/悟空平台/钉钉CLI化与Agent操作系统分析.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "钉钉CLI化与Agent操作系统分析 的反向链接列表"
+            }
+          },
+          {
+            "id": "0a711af0a48eb63c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ai知识库/悟空平台/钉钉CLI化与Agent操作系统分析.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "钉钉CLI化与Agent操作系统分析 的出链列表"
+            }
+          },
+          {
+            "id": "bef9d7c3ea65dc21",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b519ff5b7e60e892",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "9c94bb8935aa1f38",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ai知识库/悟空平台/钉钉CLI化与Agent操作系统分析.md",
+                "followCursor": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "钉钉CLI化与Agent操作系统分析 的大纲"
+            }
+          },
+          {
+            "id": "ceccb7578a389ff9",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 944.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "claudian:Open Claudian": false
+    }
+  },
+  "active": "858f49e4b483dcb5",
+  "lastOpenFiles": [
+    "XXX.md",
+    "Ai知识库/政策解读/【AI学习】智能经济新形态与一人公司黄金时代全解析.md",
+    "Ai知识库/Agent应用经验/【AI学习】Agent时代三要素企业信息化变革全解析.md",
+    "Ai知识库/悟空平台/【AI学习】阿里内部员工悟空来了打工人完了吗深度分析.md",
+    "Ai知识库/政策解读",
+    "Ai知识库/【AI学习】刘思毅OpenClaw超级实习生模型与工作流全解析.md",
+    "Ai知识库/悟空平台/【AI学习】钉钉CLI化与Agent操作系统诞生全解析.md",
+    "Ai知识库/悟空平台/【AI学习】阿里悟空平台企业级应用与硅基员工革命全解析.md",
+    "Ai知识库/￼Obsidian AI学习笔记整理提示词.md",
+    "Ai知识库/【AI学习】小天OpenClaw没用观点分析与实用技巧全解析.md",
+    "Ai知识库/【AI学习】李一舟AI无人公司设置与团队管理实战全解析.md",
+    "工具链接.md",
+    "博客链接.md",
+    "Ai知识库/【AI学习】李一舟一人公司挑战与AI个体崛起全解析.md",
+    "Ai知识库/Agent应用经验/【AI学习】晓辉博士Multi-Agent研究报告全流程拆解.md",
+    "Ai知识库/Agent应用经验",
+    "Ai知识库/Obsidian AI学习笔记模板.md",
+    "Ai知识库/晓辉博士Mut-Agent具体操作步骤详解.md",
+    "X账号链接.md",
+    "Ai知识库/悟空平台/钉钉CLI化与Agent操作系统分析.md",
+    "Ai知识库/晓辉博士Mut-Agent研究报告方法论分析.md",
+    "Ai知识库/OpenClaw的应用",
+    "Ai知识库/悟空平台/悟空平台重要设计理念.md",
+    "Ai知识库/悟空平台",
+    "Ai知识库/悟空平台/悟空开发平台影响分析.md",
+    "悟空来了打工人完了吗.pdf",
+    "未命名.md",
+    "docs/飞书多维表格学习指南_2026-03-18.md",
+    "Ai知识库",
+    "未命名.base",
+    "docs/技术架构设计_SQLServer与飞书数据同步_2026-03-18.md",
+    "docs/产品规划讨论_AI驱动的企业诊断系统_2026-03-18.md",
+    "README.md"
+  ]
+}
