@@ -7,7 +7,9 @@
       "Bash(git commit:*)",
       "Bash(git remote:*)",
       "Bash(git branch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(ping -n 2 github.com)",
+      "Bash(git config:*)"
     ]
   }
 }
