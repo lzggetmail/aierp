@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ai知识库/OpenClaw的应用/【AI学习】李一舟一人公司挑战与AI个体崛起全解析.md",
+                "file": "Ai知识库/Obsidian笔记整理指南-完整版.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【AI学习】李一舟一人公司挑战与AI个体崛起全解析"
+              "title": "Obsidian笔记整理指南-完整版"
             }
           }
         ]
@@ -195,8 +195,14 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "0473df7846b6bc6d",
+  "active": "858f49e4b483dcb5",
   "lastOpenFiles": [
+    "Ai知识库/Obsidian笔记模板-三件套.md",
+    "悟空来了打工人完了吗.pdf",
+    "Ai知识库/Obsidian笔记整理指南-完整版.md",
+    "工具链接.md",
+    "博客链接.md",
+    "Ai知识库/OpenClaw的应用/【AI学习】李一舟一人公司挑战与AI个体崛起全解析.md",
     "Ai知识库/政策解读/【AI学习】智能经济新形态与一人公司黄金时代全解析.md",
     "XXX.md",
     "Ai知识库/Agent应用经验/【AI学习】Agent时代三要素企业信息化变革全解析.md",
@@ -208,9 +214,6 @@
     "Ai知识库/￼Obsidian AI学习笔记整理提示词.md",
     "Ai知识库/OpenClaw的应用/【AI学习】小天OpenClaw没用观点分析与实用技巧全解析.md",
     "Ai知识库/OpenClaw的应用/【AI学习】李一舟AI无人公司设置与团队管理实战全解析.md",
-    "工具链接.md",
-    "博客链接.md",
-    "Ai知识库/OpenClaw的应用/【AI学习】李一舟一人公司挑战与AI个体崛起全解析.md",
     "Ai知识库/Agent应用经验/【AI学习】晓辉博士Multi-Agent研究报告全流程拆解.md",
     "Ai知识库/Agent应用经验",
     "Ai知识库/Obsidian AI学习笔记模板.md",
@@ -222,13 +225,9 @@
     "Ai知识库/悟空平台/悟空平台重要设计理念.md",
     "Ai知识库/悟空平台",
     "Ai知识库/悟空平台/悟空开发平台影响分析.md",
-    "悟空来了打工人完了吗.pdf",
     "未命名.md",
     "docs/飞书多维表格学习指南_2026-03-18.md",
     "Ai知识库",
-    "未命名.base",
-    "docs/技术架构设计_SQLServer与飞书数据同步_2026-03-18.md",
-    "docs/产品规划讨论_AI驱动的企业诊断系统_2026-03-18.md",
-    "README.md"
+    "未命名.base"
   ]
 }
