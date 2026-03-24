@@ -1,0 +1,109 @@
+{
+  "zsxq_api": {
+    "base_url": "https://api.zsxq.com",
+    "version": "2.55.0",
+    "timeout": 30000,
+    "rate_limit": {
+      "requests_per_second": 2,
+      "burst_limit": 5
+    }
+  },
+  "authentication": {
+    "config_file": "~/.openclaw/workspace/.zsxq-config.json",
+    "required_headers": [
+      "Cookie",
+      "User-Agent",
+      "x-request-id",
+      "x-signature",
+      "x-timestamp"
+    ],
+    "session_management": {
+      "auto_refresh": true,
+      "refresh_interval_hours": 24
+    }
+  },
+  "download_settings": {
+    "output_directory": "~/.openclaw/workspace/zsxq-downloads",
+    "concurrent_downloads": 3,
+    "retry_attempts": 3,
+    "retry_delay_seconds": 5,
+    "file_types": {
+      "pdf": {
+        "enabled": true,
+        "max_size_mb": 100
+      },
+      "images": {
+        "enabled": true,
+        "formats": ["jpg", "png", "gif"],
+        "max_size_mb": 20
+      }
+    }
+  },
+  "content_categories": {
+    "数字化解决方案知识库": {
+      "group_id": "88855248152252",
+      "local_path": "数字化解决方案知识库",
+      "subcategories": {
+        "报告": ["德勤", "凯捷", "普华永道", "阿里", "其他"],
+        "工具资源": ["Heptabase", "Devonthink", "方法论"],
+        "画布分享": ["知识画布", "思维导图"],
+        "图片素材": {
+          "流程图": "业务流程、工作流程、决策流程",
+          "架构图": "系统架构、技术架构、组织架构",
+          "数据可视化": "图表、仪表盘、信息图",
+          "思维导图": "知识图谱、概念图、脑图",
+          "信息图表": "统计图、对比图、时间线",
+          "UI界面": "产品界面、原型图、设计稿",
+          "其他": "未分类图片"
+        }
+      },
+      "auto_categorize": true,
+      "tags_extraction": true
+    },
+    "智慧城市之智慧交通": {
+      "group_id": "51128488121484",
+      "local_path": "智慧交通",
+      "subcategories": {
+        "技术方案": ["信号控制", "交通监测", "停车管理"],
+        "案例分析": ["城市案例", "项目经验"],
+        "政策标准": ["国家标准", "地方标准"]
+      }
+    },
+    "数字化转型ABC": {
+      "group_id": "28855584411111",
+      "local_path": "数字化转型",
+      "subcategories": {
+        "数据仓库": ["架构设计", "ETL", "数据治理"],
+        "大数据平台": ["技术选型", "实施经验"],
+        "转型案例": ["银行案例", "企业案例"]
+      }
+    }
+  },
+  "integration": {
+    "feishu_sync": {
+      "enabled": true,
+      "wiki_token": "待配置",
+      "auto_upload": false,
+      "sync_interval_hours": 24
+    },
+    "smartcity_bot": {
+      "enabled": true,
+      "auto_import": true,
+      "tag_mapping": {
+        "数字化": ["数字化解决方案", "转型"],
+        "AI": ["人工智能", "生成式AI"],
+        "咨询": ["德勤", "凯捷", "普华永道"]
+      }
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "log_file": "~/.openclaw/workspace/projects/smartcity-bot/logs/zsxq_sync.log",
+    "alert_on_failure": true,
+    "metrics": {
+      "track_downloads": true,
+      "track_errors": true,
+      "track_performance": true
+    }
+  }
+}
