@@ -10,7 +10,14 @@
       "Bash(git push:*)",
       "Bash(ping -n 2 github.com)",
       "Bash(git config:*)",
-      "Bash(cd \"D:\\\\AiERP\\\\Ai知识库\" && rm \"￼Obsidian AI学习笔记整理提示词.md\" && ls -la *.md)"
+      "Bash(cd \"D:\\\\AiERP\\\\Ai知识库\" && rm \"￼Obsidian AI学习笔记整理提示词.md\" && ls -la *.md)",
+      "Bash(git rm:*)",
+      "Bash(curl -X POST \"https://obsidian.notebooksyncer.com/api/graphql\" -H \"Content-Type: application/json\" -H \"x-api-key: o56E76xuvCvg-SvtqqS35OJluW2A\" -d '{\"query\":\"{ highlights\\(limit:1\\) { id } }\"}' --max-time 10)",
+      "Bash(find \"D:/AiERP\" -type f -name \"*.md\" -mmin -10 2>/dev/null | head -20)",
+      "Bash(find \"D:/AiERP/Ai知识库\" -type f -name \"*.md\" -mmin -30 2>/dev/null | grep -v \".venv\" | grep -v \"node_modules\" | head -20)",
+      "Bash(notebooklm --version 2>/dev/null || echo \"NotebookLM CLI not installed\")",
+      "Bash(python3 -c \"from docx import Document; doc = Document\\('C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\会议记录原文.docx'\\); print\\('\\\\n'.join\\([p.text for p in doc.paragraphs]\\)\\)\")",
+      "Bash(python -c \"from docx import Document; doc = Document\\(r'C:\\\\Users\\\\Administrator\\\\Desktop\\\\会议记录原文.docx'\\); print\\('\\\\n'.join\\([p.text for p in doc.paragraphs]\\)\\)\")"
     ]
   }
 }

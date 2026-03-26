@@ -6,15 +6,15 @@
 
 ## 📊 Skill 总览
 
-| Skill | 免费额度 | 覆盖平台 | 特点 |
-|---|---|---|---|
-| **Multi Search Engines** | 每月 1000 次 | 17 个搜索引擎 | ⭐⭐⭐ 推荐 |
-| **Brave Search** | 免费 | 通用搜索 | ⭐⭐ |
-| **X Read** | 免费 | X/YouTube/B站 | Docker 本地运行 |
-| **Agent Reach** | 免费 | 小红书/抖音/公众号/GitHub 等 | 需 cookie |
-| **Browser Use** | 免费 | 通用网页 | 浏览器自动化 |
-| **Gemini Deep Research** | 免费 | 深度研究 | ⭐⭐⭐ 推荐 |
-| **GoGo** | 有限额度 | Google 邮箱 | 邮件总结 |
+| Skill                    | 免费额度      | 覆盖平台                | 特点          |
+| ------------------------ | --------- | ------------------- | ----------- |
+| **Multi Search Engines** | 每月 1000 次 | 17 个搜索引擎            | ⭐⭐⭐ 推荐      |
+| **Brave Search**         | 免费        | 通用搜索                | ⭐⭐          |
+| **X Read**               | 免费        | X/YouTube/B站        | Docker 本地运行 |
+| **Agent Reach**          | 免费        | 小红书/抖音/公众号/GitHub 等 | 需 cookie    |
+| **Browser Use**          | 免费        | 通用网页                | 浏览器自动化      |
+| **Gemini Deep Research** | 免费        | 深度研究                | ⭐⭐⭐ 推荐      |
+| **GoGo**                 | 有限额度      | Google 邮箱           | 邮件总结        |
 
 ---
 
