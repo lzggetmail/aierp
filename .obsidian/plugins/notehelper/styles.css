@@ -128,3 +128,20 @@ VIP Status Display
 	border-radius: 4px;
 	border: 1px solid var(--background-modifier-border);
 }
+
+.api-key-links {
+	display: flex;
+	gap: 0;
+	margin: -8px 0 8px;
+	padding-left: 2px;
+}
+
+.api-key-links a {
+	font-size: 13px;
+	color: var(--text-accent);
+	text-decoration: none;
+}
+
+.api-key-links a:hover {
+	text-decoration: underline;
+}

@@ -43254,7 +43254,7 @@ var uK = E((u4, fK) => {
 var EV = 50;
 function y6(Q = EV) {
   let X = new AbortController();
-  return (0, import_events.setMaxListeners)(Q, X.signal), X;
+   try { (0, import_events.setMaxListeners)(Q, X.signal); } catch(e) {} return X;
 }
 var T0 = class extends Error {
 };

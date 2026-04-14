@@ -22895,6 +22895,28 @@ var snakeToCamelCase = (str) => str.replace(/(_[a-z])/g, (group) => group.toUppe
 var removeInvisibleChars = (str) => {
   return out_of_character_default.replace(str);
 };
+var escapeContentHashtags = (text) => {
+  if (!text)
+    return text;
+  const lines = text.split("\n");
+  let inCodeBlock = false;
+  return lines.map((line) => {
+    const stripped = line.trim().replace(/^>+\s*/, "");
+    if (/^\s{0,3}(`{3,}|~{3,})/.test(stripped)) {
+      inCodeBlock = !inCodeBlock;
+      return line;
+    }
+    if (inCodeBlock)
+      return line;
+    if (/^#{1,6}\s/.test(stripped))
+      return line;
+    return line.replace(/(`[^`]+`)|(\bhttps?:\/\/\S+)|(\]\(#)|(\[\[#)|(?<=^|[\s(])#(?=[^\s#])/g, (match3, inlineCode, url, anchorLink, wikilink) => {
+      if (inlineCode || url || anchorLink || wikilink)
+        return match3;
+      return "\\#";
+    });
+  }).join("\n");
+};
 var setOrUpdateHighlightColors = (colorSetting) => {
   const root = document.documentElement;
   Object.entries(colorSetting).forEach(([k, v]) => {
@@ -23060,12 +23082,13 @@ var sanitizeRenderedYaml = (rendered) => {
     return line;
   }).join("\n");
 };
-var DEFAULT_TEMPLATE = `# {{{title}}}
+var OLD_DEFAULT_TEMPLATE = `# {{{title}}}
 #\u7B14\u8BB0\u540C\u6B65\u52A9\u624B
 ## \u6765\u6E90
 [\u539F\u6587\u94FE\u63A5]({{{originalUrl}}})
 ## \u6B63\u6587
 {{{content}}}`;
+var DEFAULT_TEMPLATE = `{{{content}}}`;
 var getItemState = (item) => {
   if (item.isArchived) {
     return "ARCHIVED" /* Archived */;
@@ -23459,6 +23482,7 @@ var Filter = /* @__PURE__ */ ((Filter2) => {
   Filter2["ALL"] = "\u540C\u6B65\u6240\u6709\u6587\u7AE0";
   return Filter2;
 })(Filter || {});
+var OLD_DEFAULT_FRONT_MATTER_TEMPLATE = "author: {{{author}}}\nsource: {{{siteName}}}\nurl: {{{originalUrl}}}\nsaved: {{{dateSaved}}}\ntags: {{#labels}}[{{{name}}}]{{/labels}}";
 var DEFAULT_SETTINGS = {
   dateHighlightedFormat: "yyyy-MM-dd HH:mm:ss",
   dateSavedFormat: "yyyy-MM-dd HH:mm:ss",
@@ -23481,7 +23505,7 @@ var DEFAULT_SETTINGS = {
   frequency: 0,
   intervalId: 0,
   frontMatterVariables: [],
-  frontMatterTemplate: "author: {{{author}}}\nsource: {{{siteName}}}\nurl: {{{originalUrl}}}\nsaved: {{{dateSaved}}}\ntags: {{#labels}}[{{{name}}}]{{/labels}}",
+  frontMatterTemplate: "author: {{{author}}}\nsource: {{{siteName}}}\nurl: {{{originalUrl}}}\nsaved: {{{dateSaved}}}\ntags: [\u7B14\u8BB0\u540C\u6B65\u52A9\u624B]{{#labels}}[{{{name}}}]{{/labels}}",
   syncOnStart: false,
   enableHighlightColorRender: false,
   highlightManagerId: "omni" /* OMNIVORE */,
@@ -23511,6 +23535,7 @@ var DEFAULT_SETTINGS = {
   diaryLinkMaxLength: 0,
   deviceSyncCursors: {},
   initialSyncCompleted: false,
+  escapeHashtags: false,
   enableDebugLog: false
 };
 
@@ -25202,6 +25227,18 @@ var OmnivoreSettingTab = class extends import_obsidian7.PluginSettingTab {
       await this.plugin.saveSettings(true);
       await this.updateVipStatus();
     }));
+    const linksContainer = containerEl.createEl("div", {
+      cls: "api-key-links"
+    });
+    linksContainer.createEl("a", {
+      text: "\u8BE6\u7EC6\u6559\u7A0B",
+      href: "https://bijitongbu.feishu.cn/wiki/RE0fw090CihOAykU8iKcqZFEntd"
+    });
+    linksContainer.appendText("    ");
+    linksContainer.createEl("a", {
+      text: "\u6587\u4EF6\u8DEF\u5F84\u914D\u7F6E\u6A21\u62DF\u5668",
+      href: "https://obsidian.notebooksyncer.com/path-simulator"
+    });
     new import_obsidian7.Setting(containerEl).setName("\u4F1A\u5458\u4E2D\u5FC3").setHeading().addButton((button) => {
       button.setButtonText("\u5237\u65B0").onClick(async () => {
         await this.updateVipStatus();
@@ -25340,6 +25377,10 @@ var OmnivoreSettingTab = class extends import_obsidian7.PluginSettingTab {
         new import_obsidian7.Notice("\u9891\u7387\u5FC5\u987B\u662F\u6B63\u6574\u6570");
         return;
       }
+      if (frequency < 0) {
+        new import_obsidian7.Notice("\u9891\u7387\u4E0D\u80FD\u4E3A\u8D1F\u6570");
+        return;
+      }
       if (frequency > 0 && frequency < 15) {
         new import_obsidian7.Notice("\u540C\u6B65\u9891\u7387\u4E0D\u80FD\u4F4E\u4E8E 15 \u79D2");
         return;
@@ -25434,6 +25475,14 @@ var OmnivoreSettingTab = class extends import_obsidian7.PluginSettingTab {
           return;
         this.plugin.settings.attachmentFolder = value;
         await this.plugin.saveSettings(true);
+        if (this.plugin.attachmentLocalizer) {
+          this.plugin.attachmentLocalizer.updateOptions({
+            attachmentFolder: this.plugin.settings.attachmentFolder,
+            folderDateFormat: this.plugin.settings.folderDateFormat,
+            maxRetries: this.plugin.settings.imageDownloadRetries,
+            retryDelay: 1e3
+          });
+        }
       });
     });
     new import_obsidian7.Setting(containerEl).setName("\u6587\u7AE0\u6587\u4EF6\u540D / article filename").setDesc(createFragment((fragment) => {
@@ -25529,6 +25578,11 @@ var OmnivoreSettingTab = class extends import_obsidian7.PluginSettingTab {
         }
       }));
     }
+    new import_obsidian7.Setting(containerEl).setName("\u5185\u5BB9\u5904\u7406 / content processing").setHeading();
+    new import_obsidian7.Setting(containerEl).setName("\u8F6C\u4E49\u6587\u4E2D\u6807\u7B7E / escape hashtags in content").setDesc("\u5F00\u542F\u540E\uFF0C\u540C\u6B65\u7684\u6587\u7AE0\u6B63\u6587\u4E2D\u7684 #\u6807\u7B7E \u4F1A\u88AB\u8F6C\u4E49\u4E3A \\#\u6807\u7B7E\uFF0C\u9632\u6B62 Obsidian \u5C06\u5176\u8BC6\u522B\u4E3A\u6807\u7B7E\u5E72\u6270\u4F60\u7684\u6807\u7B7E\u4F53\u7CFB / When enabled, #hashtags in synced content will be escaped to \\#hashtags to prevent Obsidian from recognizing them as tags").addToggle((toggle) => toggle.setValue(this.plugin.settings.escapeHashtags).onChange(async (value) => {
+      this.plugin.settings.escapeHashtags = value;
+      await this.plugin.saveSettings(true);
+    }));
     new import_obsidian7.Setting(containerEl).setName("\u65E5\u8BB0\u94FE\u63A5 / diary links").setHeading();
     new import_obsidian7.Setting(containerEl).setName("\u542F\u7528\u65E5\u8BB0\u94FE\u63A5 / enable diary links").setDesc(createFragment((fragment) => {
       fragment.append("\u540C\u6B65\u5B8C\u6210\u540E\uFF0C\u81EA\u52A8\u5728\u65E5\u8BB0\u6587\u4EF6\u4E2D\u63D2\u5165\u540C\u6B65\u5185\u5BB9\u7684\u94FE\u63A5 / Automatically insert wikilinks to synced content in diary files after sync", fragment.createEl("br"), fragment.createEl("br"), "\u4F7F\u7528\u8BF4\u660E / Usage:", fragment.createEl("br"), "1. \u5728\u65E5\u8BB0\u6A21\u677F\u4E2D\u6DFB\u52A0\u951A\u70B9 / Add anchor in diary template: ", fragment.createEl("code", { text: "<!-- notehelper-links -->" }), fragment.createEl("br"), "2. \u540C\u6B65\u540E\u94FE\u63A5\u4F1A\u81EA\u52A8\u63D2\u5165\u5230\u951A\u70B9\u4E0B\u65B9 / Links will be inserted below the anchor after sync", fragment.createEl("br"), fragment.createEl("br"), "\u{1F4D6} ", fragment.createEl("a", {
@@ -26785,37 +26839,33 @@ var ImageLocalizer = class {
           logError(`\u5904\u7406\u56FE\u7247\u5931\u8D25: ${image.originalUrl}`, error);
         }
       }
+      this.fileSavedAtMap.delete(file.path);
       if (replacements.length > 0) {
-        let content = await this.vault.read(file);
-        const contentBeforeReplace = content;
-        for (const { original, local } of replacements) {
-          const beforeLen = content.length;
-          content = content.split(original).join(local);
-          if (content.length === beforeLen && content === contentBeforeReplace) {
-            log(`\u26A0\uFE0F \u66FF\u6362\u65E0\u6548! originalText \u5728 content \u4E2D\u672A\u627E\u5230: "${original.substring(0, 100)}"`);
-          } else {
-            log(`\u2705 \u66FF\u6362\u6210\u529F: "${original.substring(0, 80)}" \u2192 "${local}"`);
-          }
-        }
-        const contentChanged = content !== contentBeforeReplace;
-        log(`\u66FF\u6362\u7ED3\u679C: contentChanged=${contentChanged}, replacements=${replacements.length}/${images.length}`);
-        if (contentChanged) {
-          await this.vault.modify(file, content);
-          log(`\u56FE\u7247\u672C\u5730\u5316\u5B8C\u6210: ${file.path} (${replacements.length}/${images.length})`);
-          const verifyContent = await this.vault.read(file);
-          const stillHasRemoteImages = images.some((img) => verifyContent.includes(img.originalUrl));
-          if (stillHasRemoteImages) {
-            log(`\u26A0\uFE0F \u5199\u5165\u9A8C\u8BC1\u5931\u8D25! vault.modify \u540E\u6587\u4EF6\u4ECD\u542B\u8FDC\u7A0B\u56FE\u7247\u94FE\u63A5: ${file.path}`);
-            for (const img of images) {
-              if (verifyContent.includes(img.originalUrl)) {
-                log(`  \u672A\u66FF\u6362: ${img.originalUrl}`);
-              }
+        let replaceCount = 0;
+        const result = await this.vault.process(file, (content) => {
+          for (const { original, local } of replacements) {
+            const before = content;
+            content = content.split(original).join(local);
+            if (content !== before) {
+              replaceCount++;
+              log(`\u2705 \u66FF\u6362\u6210\u529F: "${original.substring(0, 80)}" \u2192 "${local}"`);
+            } else {
+              log(`\u26A0\uFE0F \u66FF\u6362\u65E0\u6548! originalText \u5728 content \u4E2D\u672A\u627E\u5230: "${original.substring(0, 100)}"`);
             }
-          } else {
-            log(`\u2705 \u5199\u5165\u9A8C\u8BC1\u901A\u8FC7: \u6240\u6709\u8FDC\u7A0B\u56FE\u7247\u94FE\u63A5\u5DF2\u66FF\u6362: ${file.path}`);
+          }
+          return content;
+        });
+        log(`\u56FE\u7247\u672C\u5730\u5316\u5B8C\u6210: ${file.path} (${replaceCount}/${images.length})`);
+        const stillHasRemoteImages = images.some((img) => result.includes(img.originalUrl));
+        if (stillHasRemoteImages) {
+          log(`\u26A0\uFE0F \u5199\u5165\u9A8C\u8BC1\u5931\u8D25! \u6587\u4EF6\u4ECD\u542B\u8FDC\u7A0B\u56FE\u7247\u94FE\u63A5: ${file.path}`);
+          for (const img of images) {
+            if (result.includes(img.originalUrl)) {
+              log(`  \u672A\u66FF\u6362: ${img.originalUrl}`);
+            }
           }
         } else {
-          log(`\u26A0\uFE0F \u66FF\u6362\u540E\u5185\u5BB9\u672A\u53D8\u5316\uFF0C\u8DF3\u8FC7\u5199\u5165: ${file.path}`);
+          log(`\u2705 \u5199\u5165\u9A8C\u8BC1\u901A\u8FC7: \u6240\u6709\u8FDC\u7A0B\u56FE\u7247\u94FE\u63A5\u5DF2\u66FF\u6362: ${file.path}`);
         }
       }
     } catch (error) {
@@ -26910,7 +26960,6 @@ var ImageLocalizer = class {
       contentReader: null
     };
     const folderPath = render3(tempItem, this.options.attachmentFolder, this.options.folderDateFormat);
-    this.fileSavedAtMap.delete(file.path);
     return (0, import_obsidian11.normalizePath)(folderPath);
   }
   generateMarkdownLink(image, localPath) {
@@ -27209,12 +27258,14 @@ var AttachmentLocalizer = class {
           logError(`\u5904\u7406\u9644\u4EF6\u5931\u8D25: ${attachment.originalUrl}`, error);
         }
       }
+      this.fileSavedAtMap.delete(file.path);
       if (replacements.length > 0) {
-        let content = await this.vault.read(file);
-        for (const { original, local } of replacements) {
-          content = content.split(original).join(local);
-        }
-        await this.vault.modify(file, content);
+        await this.vault.process(file, (content) => {
+          for (const { original, local } of replacements) {
+            content = content.split(original).join(local);
+          }
+          return content;
+        });
         log(`\u9644\u4EF6\u672C\u5730\u5316\u5B8C\u6210: ${file.path} (${replacements.length}/${attachments.length})`);
       }
     } catch (error) {
@@ -27288,7 +27339,6 @@ var AttachmentLocalizer = class {
       contentReader: null
     };
     const folderPath = render3(tempItem, this.options.attachmentFolder, this.options.folderDateFormat);
-    this.fileSavedAtMap.delete(file.path);
     return (0, import_obsidian13.normalizePath)(folderPath);
   }
   generateMarkdownLink(attachment, localPath) {
@@ -27355,18 +27405,13 @@ var AttachmentLocalizer = class {
 };
 
 // src/syncCursorAdjust.ts
-var HIGH_FREQUENCY_THRESHOLD_SECONDS = 300;
-var HIGH_FREQUENCY_ROLLBACK_SECONDS = 120;
-function adjustSyncCursor(syncAt, folder, initialSyncCompleted, frequency, isAutoSync) {
+function adjustSyncCursor(syncAt, folder, initialSyncCompleted) {
   if (!syncAt)
     return "";
   let dt = parseDateTime(syncAt);
   const baseFolder = folder.split("{{{")[0].replace(/\/+$/, "");
   if (!initialSyncCompleted && baseFolder) {
     dt = dt.minus({ days: 1 });
-  }
-  if (isAutoSync && frequency > 0 && frequency < HIGH_FREQUENCY_THRESHOLD_SECONDS) {
-    dt = dt.minus({ seconds: HIGH_FREQUENCY_ROLLBACK_SECONDS });
   }
   return dt.toFormat(DATE_FORMAT);
 }
@@ -27833,83 +27878,85 @@ var MergeProcessor = class {
   async processBatch(batchItems, omnivoreFile) {
     if (batchItems.length === 0)
       return;
-    const existingContent = await this.context.app.vault.read(omnivoreFile);
-    let existingContentWithoutFrontmatter = removeFrontMatterFromContent(existingContent);
-    const rawExisting = parseFrontMatterFromContent(existingContent) ?? {};
-    const parsedExistingFrontMatter = Array.isArray(rawExisting) ? { messages: rawExisting } : rawExisting;
-    const otherProperties = { ...parsedExistingFrontMatter };
-    delete otherProperties.messages;
-    delete otherProperties.syncedIds;
-    let syncedIds = readSyncedFilter(parsedExistingFrontMatter);
     const sortOrder = this.context.settings.messageSortOrder ?? "desc" /* DESC */;
     const wechatItems = batchItems.filter((b) => isWeChatMessage(b.item));
     const articleItems = batchItems.filter((b) => !isWeChatMessage(b.item));
-    const newWechatItems = wechatItems.filter((b) => !bloomHasId(syncedIds, b.item.id));
-    if (newWechatItems.length > 0) {
-      const sorted = sortItems(newWechatItems, sortOrder);
-      const renderedMessages = sorted.map((b) => {
-        const rendered = renderWeChatMessageSimple(b.item, this.context.settings.dateSavedFormat, this.context.settings.wechatMessageTemplate);
-        if (!rendered) {
-          logError(`Warning: rendered message content is empty, ID: ${b.item.id}`);
-        }
-        return rendered;
-      });
-      const concatenated = renderedMessages.join("\n\n");
-      const separator = existingContentWithoutFrontmatter.trim() ? "\n\n" : "";
-      if (sortOrder === "asc" /* ASC */) {
-        existingContentWithoutFrontmatter = `${existingContentWithoutFrontmatter}${separator}${concatenated}`;
-      } else {
-        existingContentWithoutFrontmatter = `${concatenated}${separator}${existingContentWithoutFrontmatter}`;
+    const sortedWechat = sortItems(wechatItems, sortOrder);
+    const renderedWechat = sortedWechat.map((b) => {
+      const rendered = renderWeChatMessageSimple(b.item, this.context.settings.dateSavedFormat, this.context.settings.wechatMessageTemplate);
+      if (!rendered) {
+        logError(`Warning: rendered message content is empty, ID: ${b.item.id}`);
       }
-      for (const b of sorted) {
-        syncedIds = bloomAddId(syncedIds, b.item.id);
-      }
-    }
-    const existingArticles = articleItems.filter((b) => bloomHasId(syncedIds, b.item.id));
-    const newArticles = articleItems.filter((b) => !bloomHasId(syncedIds, b.item.id));
-    for (const b of existingArticles) {
-      const contentWithoutFrontmatter = removeFrontMatterFromContent(b.content);
-      if (this.context.settings.sectionSeparator && this.context.settings.sectionSeparatorEnd) {
-        const dateSaved = formatDate(b.item.savedAt, this.context.settings.dateSavedFormat);
-        const articleView = { id: b.item.id, title: b.item.title, dateSaved };
-        const renderedStart = mustache_default.render(this.context.settings.sectionSeparator, articleView);
-        const renderedEnd = mustache_default.render(this.context.settings.sectionSeparatorEnd, articleView);
-        const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-        const regex = new RegExp(`${escapeRegex(renderedStart)}.*?${escapeRegex(renderedEnd)}`, "s");
-        existingContentWithoutFrontmatter = existingContentWithoutFrontmatter.replace(regex, contentWithoutFrontmatter);
-      } else {
+      return { item: b.item, rendered };
+    });
+    await this.context.app.vault.process(omnivoreFile, (content) => {
+      const fmMatch = content.match(/^(---\r?\n[\s\S]*?\r?\n---)\n*/) || content.match(/^(---\r?\n---)\n*/);
+      const fmBlock = fmMatch ? fmMatch[0] : "";
+      let body = content.slice(fmBlock.length);
+      const rawFm = parseFrontMatterFromContent(content) ?? {};
+      const parsedFm = Array.isArray(rawFm) ? { messages: rawFm } : rawFm;
+      let syncedIds = readSyncedFilter(parsedFm);
+      const newWechat = renderedWechat.filter((p) => !bloomHasId(syncedIds, p.item.id));
+      if (newWechat.length > 0) {
+        const concatenated = newWechat.map((p) => p.rendered).join("\n\n");
+        const separator = body.trim() ? "\n\n" : "";
         if (sortOrder === "asc" /* ASC */) {
-          existingContentWithoutFrontmatter = `${existingContentWithoutFrontmatter}
+          body = `${body}${separator}${concatenated}`;
+        } else {
+          body = `${concatenated}${separator}${body}`;
+        }
+        for (const p of newWechat) {
+          syncedIds = bloomAddId(syncedIds, p.item.id);
+        }
+      }
+      const existingArticles = articleItems.filter((b) => bloomHasId(syncedIds, b.item.id));
+      const newArticles = articleItems.filter((b) => !bloomHasId(syncedIds, b.item.id));
+      for (const b of existingArticles) {
+        const contentWithoutFrontmatter = removeFrontMatterFromContent(b.content);
+        if (this.context.settings.sectionSeparator && this.context.settings.sectionSeparatorEnd) {
+          const dateSaved = formatDate(b.item.savedAt, this.context.settings.dateSavedFormat);
+          const articleView = { id: b.item.id, title: b.item.title, dateSaved };
+          const renderedStart = mustache_default.render(this.context.settings.sectionSeparator, articleView);
+          const renderedEnd = mustache_default.render(this.context.settings.sectionSeparatorEnd, articleView);
+          const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          const regex = new RegExp(`${escapeRegex(renderedStart)}.*?${escapeRegex(renderedEnd)}`, "s");
+          body = body.replace(regex, contentWithoutFrontmatter);
+        } else {
+          if (sortOrder === "asc" /* ASC */) {
+            body = `${body}
 
 ${contentWithoutFrontmatter}`;
-        } else {
-          existingContentWithoutFrontmatter = `${contentWithoutFrontmatter}
+          } else {
+            body = `${contentWithoutFrontmatter}
 
-${existingContentWithoutFrontmatter}`;
+${body}`;
+          }
         }
       }
-    }
-    if (newArticles.length > 0) {
-      const sortedNew = sortItems(newArticles, sortOrder);
-      const concatenated = sortedNew.map((b) => removeFrontMatterFromContent(b.content)).join("\n\n");
-      const separator = existingContentWithoutFrontmatter.trim() ? "\n\n" : "";
-      if (sortOrder === "asc" /* ASC */) {
-        existingContentWithoutFrontmatter = `${existingContentWithoutFrontmatter}${separator}${concatenated}`;
-      } else {
-        existingContentWithoutFrontmatter = `${concatenated}${separator}${existingContentWithoutFrontmatter}`;
+      if (newArticles.length > 0) {
+        const sortedNew = sortItems(newArticles, sortOrder);
+        const concatenated = sortedNew.map((b) => removeFrontMatterFromContent(b.content)).join("\n\n");
+        const separator = body.trim() ? "\n\n" : "";
+        if (sortOrder === "asc" /* ASC */) {
+          body = `${body}${separator}${concatenated}`;
+        } else {
+          body = `${concatenated}${separator}${body}`;
+        }
+        for (const b of sortedNew) {
+          syncedIds = bloomAddId(syncedIds, b.item.id);
+        }
       }
-      for (const b of sortedNew) {
-        syncedIds = bloomAddId(syncedIds, b.item.id);
-      }
-    }
-    const newFrontMatterStr = `---
-${(0, import_obsidian16.stringifyYaml)({
-      ...otherProperties,
-      syncedIds
-    })}---`;
-    await this.context.app.vault.modify(omnivoreFile, `${newFrontMatterStr}
+      const updatedFm = { ...parsedFm };
+      updatedFm.syncedIds = syncedIds;
+      if ("messages" in updatedFm)
+        delete updatedFm.messages;
+      const fmYaml = (0, import_obsidian16.stringifyYaml)(updatedFm);
+      const newFmBlock = `---
+${fmYaml}---
 
-${existingContentWithoutFrontmatter}`);
+`;
+      return newFmBlock + body;
+    });
     const batchSavedAt = batchItems[0]?.item.savedAt;
     await this.context.enqueueFileForImageLocalization(omnivoreFile, batchSavedAt);
     await this.context.enqueueFileForAttachmentLocalization(omnivoreFile, batchSavedAt);
@@ -27933,7 +27980,7 @@ var FileProcessor = class {
     this.context = context;
   }
   async process(item, normalizedPath, content, folderName, customFilename) {
-    this.currentSavedAt = item.savedAt;
+    this.currentSavedAt = item.savedAt || void 0;
     const existingByIndex = this.context.findFileById(item.id);
     if (existingByIndex) {
       const existingContent = await this.context.app.vault.read(existingByIndex);
@@ -28408,11 +28455,15 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
   }
   async initializeNonCriticalFeatures() {
     try {
+      this.scheduleSync();
+    } catch (error) {
+      logError("\u5B9A\u65F6\u540C\u6B65\u542F\u52A8\u5931\u8D25:", error);
+    }
+    try {
       log("\u{1F680} \u521D\u59CB\u5316\u975E\u5173\u952E\u529F\u80FD...");
       this.addSettingTab(new OmnivoreSettingTab(this.app, this));
       this.configMigrationManager = new ConfigMigrationManager(this.app, this);
       await this.processSettingsCompatibility();
-      this.scheduleSync();
       setOrUpdateHighlightColors(this.settings.highlightColorMapping);
       if (this.settings.imageMode === "local" /* LOCAL */) {
         this.initializeImageLocalizer();
@@ -28472,15 +28523,13 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
     log(`\u5F00\u59CB\u6CE8\u91CA ${files.length} \u4E2A\u6587\u4EF6\u4E2D\u7684\u56FE\u7247...`);
     for (const file of files) {
       try {
-        let content = await this.app.vault.read(file);
-        const originalContent = content;
-        content = content.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, "<!-- ![$1]($2) -->");
-        content = content.replace(/!\[\[([^\]]+)\]\]/g, "<!-- ![[$1]] -->");
-        content = content.replace(/<img([^>]+)>/g, "<!-- <img$1> -->");
-        if (content !== originalContent) {
-          await this.app.vault.modify(file, content);
-          log(`\u5DF2\u6CE8\u91CA\u56FE\u7247: ${file.path}`);
-        }
+        await this.app.vault.process(file, (content) => {
+          content = content.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, "<!-- ![$1]($2) -->");
+          content = content.replace(/!\[\[([^\]]+)\]\]/g, "<!-- ![[$1]] -->");
+          content = content.replace(/<img([^>]+)>/g, "<!-- <img$1> -->");
+          return content;
+        });
+        log(`\u5DF2\u6CE8\u91CA\u56FE\u7247: ${file.path}`);
       } catch (error) {
         logError(`\u6CE8\u91CA\u56FE\u7247\u5931\u8D25: ${file.path}`, error);
       }
@@ -28503,6 +28552,16 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
         needsSave = true;
         log("\u524D\u7F6E\u5143\u6570\u636E\u6A21\u677F\u5DF2\u8FC1\u79FB\u5230\u65B0\u9ED8\u8BA4\u503C");
       }
+      if (this.settings.template === OLD_DEFAULT_TEMPLATE) {
+        this.settings.template = DEFAULT_SETTINGS.template;
+        needsSave = true;
+        log("\u5185\u5BB9\u6A21\u677F\u5DF2\u4ECE\u65E7\u9ED8\u8BA4\u503C\u8FC1\u79FB\u5230\u65B0\u9ED8\u8BA4\u503C");
+      }
+      if (this.settings.frontMatterTemplate === OLD_DEFAULT_FRONT_MATTER_TEMPLATE) {
+        this.settings.frontMatterTemplate = DEFAULT_SETTINGS.frontMatterTemplate;
+        needsSave = true;
+        log("\u524D\u7F6E\u5143\u6570\u636E\u6A21\u677F\u5DF2\u4ECE\u65E7\u9ED8\u8BA4\u503C\u8FC1\u79FB\u5230\u65B0\u9ED8\u8BA4\u503C\uFF08\u6DFB\u52A0\u7B14\u8BB0\u540C\u6B65\u52A9\u624B\u6807\u7B7E\uFF09");
+      }
       const settingsWithLegacy = this.settings;
       if (typeof settingsWithLegacy.enableImageLocalization === "boolean") {
         log("\u68C0\u6D4B\u5230\u65E7\u7248\u56FE\u7247\u8BBE\u7F6E\uFF0C\u5F00\u59CB\u8FC1\u79FB...");
@@ -28524,21 +28583,6 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
       id: "sync",
       name: "Sync new changes",
       callback: async () => {
-        await this.fetchOmnivore();
-      }
-    });
-    this.addCommand({
-      id: "resync",
-      name: "Resync all articles",
-      callback: async () => {
-        this.settings.syncAt = "";
-        this.settings.initialSyncCompleted = false;
-        const deviceId = this.getDeviceId();
-        if (this.settings.deviceSyncCursors) {
-          this.settings.deviceSyncCursors[deviceId] = "";
-        }
-        await this.saveSettings();
-        new import_obsidian19.Notice("\u7B14\u8BB0\u540C\u6B65\u52A9\u624B\u6700\u540E\u540C\u6B65\u65F6\u95F4\u5DF2\u91CD\u7F6E");
         await this.fetchOmnivore();
       }
     });
@@ -28574,16 +28618,18 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
     if (this.attachmentLocalizer)
       totalPhases++;
     noticeManager.startPhaseProgress("\u672C\u5730\u5316", totalPhases);
+    const cache = this.app.metadataCache.getFileCache(file);
+    const savedAt = cache?.frontmatter?.dateSaved;
     try {
       if (this.imageLocalizer) {
         this.imageLocalizer.clearProcessedMark(file.path);
-        await this.imageLocalizer.enqueueFile(file);
+        await this.imageLocalizer.enqueueFile(file, savedAt);
         await this.imageLocalizer.processQueue();
         noticeManager.onPhaseItemProcessed();
       }
       if (this.attachmentLocalizer) {
         this.attachmentLocalizer.clearProcessedMark(file.path);
-        await this.attachmentLocalizer.enqueueFile(file);
+        await this.attachmentLocalizer.enqueueFile(file, savedAt);
         await this.attachmentLocalizer.processQueue();
         noticeManager.onPhaseItemProcessed();
       }
@@ -28744,14 +28790,16 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
     const effectiveMessageFolder = messageFolder || folder;
     const deviceId = this.getDeviceId();
     let syncAt = this.settings.deviceSyncCursors?.[deviceId] || this.settings.syncAt || "";
-    const adjustedSyncAt = adjustSyncCursor(syncAt, folder, this.settings.initialSyncCompleted, this.settings.frequency, !manualSync);
+    const adjustedSyncAt = adjustSyncCursor(syncAt, folder, this.settings.initialSyncCompleted);
     if (adjustedSyncAt !== syncAt) {
       log(`\u{1F4C5} \u540C\u6B65\u65F6\u95F4\u5DF2\u8C03\u6574: ${syncAt} -> ${adjustedSyncAt}`);
       syncAt = adjustedSyncAt;
     }
     const isSingleFile = mergeMode !== "none" /* NONE */;
     if (this.syncing) {
-      new import_obsidian19.Notice("\u{1F422} \u6B63\u5728\u540C\u6B65\u4E2D...");
+      if (manualSync) {
+        new import_obsidian19.Notice("\u{1F422} \u6B63\u5728\u540C\u6B65\u4E2D...");
+      }
       return;
     }
     if (!apiKey) {
@@ -28785,6 +28833,16 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
       log(`\u{1F504} [AutoUpdate] Skipped: feature disabled or updater not initialized`);
     }
     this.syncing = true;
+    const SYNC_TIMEOUT_MS = 5 * 60 * 1e3;
+    const syncWatchdog = window.setTimeout(() => {
+      if (this.syncing) {
+        logError("\u26A0\uFE0F \u540C\u6B65\u8D85\u65F6\uFF085\u5206\u949F\uFF09\uFF0C\u5F3A\u5236\u91CD\u7F6E\u540C\u6B65\u72B6\u6001");
+        this.syncing = false;
+        if (manualSync) {
+          new import_obsidian19.Notice("\u540C\u6B65\u8D85\u65F6\uFF0C\u5DF2\u81EA\u52A8\u91CD\u7F6E\u3002\u8BF7\u68C0\u67E5\u7F51\u7EDC\u540E\u91CD\u8BD5\u3002", 5e3);
+        }
+      }
+    }, SYNC_TIMEOUT_MS);
     try {
       log(`\u7B14\u8BB0\u540C\u6B65\u52A9\u624B\u5F00\u59CB\u540C\u6B65\uFF0C\u81EA: '${syncAt}'`);
       log("\u{1F527} \u5F00\u59CB\u89E3\u6790\u524D\u7AEF\u6A21\u677F");
@@ -28808,6 +28866,7 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
       const syncContext = new SyncContext(this.app, this.settings, this.imageLocalizer, this.attachmentLocalizer);
       const mergeProcessor = new MergeProcessor(syncContext);
       const fileProcessor = new FileProcessor(syncContext);
+      let maxUpdatedAt = "";
       log("\u{1F527} \u51C6\u5907\u5F00\u59CB\u5FAA\u73AF\u83B7\u53D6\u6570\u636E");
       for (let after = 0; ; after += size) {
         log(`\u{1F527} \u5F00\u59CB\u83B7\u53D6\u7B2C ${after / size + 1} \u6279\u6570\u636E`);
@@ -28861,7 +28920,8 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
             }
             const fileAttachment = item.pageType === "FILE" && includeFileAttachment ? await this.downloadFileAsAttachment(item) : void 0;
             const shouldMergeIntoSingleFile = mergeMode === "messages" /* MESSAGES */ && isWeChatMessage(item) || mergeMode === "all" /* ALL */;
-            const content = renderItemContent(item, template, highlightOrder, this.settings.enableHighlightColorRender ? this.settings.highlightManagerId : void 0, this.settings.dateHighlightedFormat, this.settings.dateSavedFormat, shouldMergeIntoSingleFile, frontMatterVariables, frontMatterTemplate, this.settings.sectionSeparator, this.settings.sectionSeparatorEnd, fileAttachment, this.settings.wechatMessageTemplate);
+            const itemForRender = this.settings.escapeHashtags && item.content ? { ...item, content: escapeContentHashtags(item.content) } : item;
+            const content = renderItemContent(itemForRender, template, highlightOrder, this.settings.enableHighlightColorRender ? this.settings.highlightManagerId : void 0, this.settings.dateHighlightedFormat, this.settings.dateSavedFormat, shouldMergeIntoSingleFile, frontMatterVariables, frontMatterTemplate, this.settings.sectionSeparator, this.settings.sectionSeparatorEnd, fileAttachment, this.settings.wechatMessageTemplate);
             let customFilename = replaceIllegalCharsFile(renderFilename(item, filename, this.settings.filenameDateFormat));
             if (isSingleFile && item.title.startsWith("\u540C\u6B65\u52A9\u624B_")) {
               const titleParts = item.title.split("_");
@@ -28894,6 +28954,13 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
                 group.items.push({ item, content });
               }
             }
+            if (item.updatedAt) {
+              const t = DateTime.fromISO(item.updatedAt);
+              const cur = maxUpdatedAt ? DateTime.fromISO(maxUpdatedAt) : DateTime.fromMillis(0);
+              if (t.isValid && t > cur) {
+                maxUpdatedAt = item.updatedAt;
+              }
+            }
           } catch (error) {
             logError(`\u274C \u5904\u7406\u6587\u7AE0\u5931\u8D25\uFF0C\u8DF3\u8FC7: ${item.title}`, error);
           }
@@ -28923,19 +28990,23 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
         }
       }
       const successCount = syncContext.successTracker.getCount();
-      if (successCount > 0) {
-        const now2 = DateTime.local().toFormat(DATE_FORMAT);
-        this.settings.syncAt = now2;
+      if (successCount > 0 && maxUpdatedAt) {
+        const parsed = DateTime.fromISO(maxUpdatedAt);
+        if (!parsed.isValid) {
+          log(`\u26A0\uFE0F maxUpdatedAt \u89E3\u6790\u5931\u8D25: ${maxUpdatedAt}\uFF0C\u4E0D\u66F4\u65B0\u6E38\u6807`);
+        }
+        const cursorValue = parsed.isValid ? parsed.toFormat(DATE_FORMAT) : parseDateTime(maxUpdatedAt).toFormat(DATE_FORMAT);
+        this.settings.syncAt = cursorValue;
         if (!this.settings.deviceSyncCursors) {
           this.settings.deviceSyncCursors = {};
         }
-        this.settings.deviceSyncCursors[deviceId] = now2;
+        this.settings.deviceSyncCursors[deviceId] = cursorValue;
         if (shouldMarkInitialSyncCompleted(successCount, this.settings.initialSyncCompleted)) {
           this.settings.initialSyncCompleted = true;
         }
         this.cleanStaleDeviceCursors();
         await this.saveSettings(true);
-        log(`\u2705 \u540C\u6B65\u5B8C\u6210\uFF01\u6210\u529F\u5904\u7406 ${successCount} \u7BC7\u6587\u7AE0\uFF0CsyncAt: ${now2}, deviceId: ${deviceId}`);
+        log(`\u2705 \uFFFD\uFFFD\uFFFD\u6B65\u5B8C\u6210\uFF01\u6210\u529F\u5904\u7406 ${successCount} \u7BC7\u6587\u7AE0\uFF0CsyncAt: ${cursorValue} (from maxUpdatedAt), deviceId: ${deviceId}`);
         if (manualSync) {
           noticeManager.completeSync(successCount);
         }
@@ -29017,6 +29088,7 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
       }
       logError(e);
     } finally {
+      window.clearTimeout(syncWatchdog);
       this.syncing = false;
       try {
         this.refreshFileExplorer();

@@ -23378,7 +23378,7 @@ var isWeChatMessage = (item) => {
 };
 var generateMessageHeading = (item) => {
   const content = item.content || "";
-  const plainText = content.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+  const plainText = content.replace(/<[^>]*>/g, "").replace(/!\[\[([^\]|]*)\|?([^\]]*)\]\]/g, (_, p, a) => a || p || "").replace(/\[\[([^\]|]*)\|?([^\]]*)\]\]/g, (_, p, a) => a || p || "").replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/\s+/g, " ").trim();
   const summary = plainText.slice(0, 10);
   return summary || "\u6D88\u606F";
 };
@@ -23481,7 +23481,7 @@ var DEFAULT_SETTINGS = {
   frequency: 0,
   intervalId: 0,
   frontMatterVariables: [],
-  frontMatterTemplate: "",
+  frontMatterTemplate: "author: {{{author}}}\nsource: {{{siteName}}}\nurl: {{{originalUrl}}}\nsaved: {{{dateSaved}}}\ntags: {{#labels}}[{{{name}}}]{{/labels}}",
   syncOnStart: false,
   enableHighlightColorRender: false,
   highlightManagerId: "omni" /* OMNIVORE */,
@@ -26688,7 +26688,8 @@ var ImageLocalizationQueue = class {
 var IMAGE_PATTERN = /!\[([^\]]*)\]\(([^)\n]+)\)|!\[\[([^\]\n]+)\]\]|<img[^>\n]+src=["']([^"'\n]+)["']/g;
 var LINK_PATTERN = /(?<!!)\[([^\]]*)\]\(([^)\n]+)\)/g;
 var ALWAYS_LOCALIZE_DOMAINS = [
-  "sync.bijitongbu.site"
+  "sync.bijitongbu.site",
+  "media30d.clipfx.app"
 ];
 function isAlwaysLocalizeDomain(url) {
   try {
@@ -26701,6 +26702,7 @@ function isAlwaysLocalizeDomain(url) {
 var ImageLocalizer = class {
   constructor(app, options) {
     this.md5Cache = /* @__PURE__ */ new Map();
+    this.fileSavedAtMap = /* @__PURE__ */ new Map();
     this.app = app;
     this.vault = app.vault;
     this.queue = new ImageLocalizationQueue();
@@ -26769,7 +26771,6 @@ var ImageLocalizer = class {
         log(`\u6CA1\u6709\u9700\u8981\u672C\u5730\u5316\u7684\u56FE\u7247: ${file.path}`);
         return;
       }
-      let content = await this.vault.read(file);
       const replacements = [];
       for (const image of images) {
         try {
@@ -26785,6 +26786,7 @@ var ImageLocalizer = class {
         }
       }
       if (replacements.length > 0) {
+        let content = await this.vault.read(file);
         const contentBeforeReplace = content;
         for (const { original, local } of replacements) {
           const beforeLen = content.length;
@@ -26894,7 +26896,7 @@ var ImageLocalizer = class {
       labels: null,
       highlights: null,
       updatedAt: null,
-      savedAt: DateTime.now().toISO() ?? new Date().toISOString(),
+      savedAt: this.fileSavedAtMap.get(file.path) ?? DateTime.now().toISO() ?? new Date().toISOString(),
       pageType: "ARTICLE",
       content: null,
       publishedAt: null,
@@ -26908,6 +26910,7 @@ var ImageLocalizer = class {
       contentReader: null
     };
     const folderPath = render3(tempItem, this.options.attachmentFolder, this.options.folderDateFormat);
+    this.fileSavedAtMap.delete(file.path);
     return (0, import_obsidian11.normalizePath)(folderPath);
   }
   generateMarkdownLink(image, localPath) {
@@ -26916,7 +26919,10 @@ var ImageLocalizer = class {
     }
     return `![[${localPath}]]`;
   }
-  async enqueueFile(file) {
+  async enqueueFile(file, savedAt) {
+    if (savedAt) {
+      this.fileSavedAtMap.set(file.path, savedAt);
+    }
     const filePath = file.path;
     if (this.queue.isInQueue(filePath)) {
       log(`\u6587\u4EF6\u5DF2\u5728\u961F\u5217\u4E2D\uFF0C\u8DF3\u8FC7: ${filePath}`);
@@ -26938,12 +26944,14 @@ var ImageLocalizer = class {
       retryCount: 0
     });
   }
-  async processQueue() {
+  async processQueue(onProgress) {
     if (this.queue.isProcessing() || this.queue.isEmpty()) {
       return;
     }
     this.queue.setProcessing(true);
     log("\u5F00\u59CB\u5904\u7406\u56FE\u7247\u672C\u5730\u5316\u961F\u5217...");
+    const total = this.queue.size();
+    let processed = 0;
     while (!this.queue.isEmpty()) {
       const task = this.queue.dequeue();
       if (!task)
@@ -26959,12 +26967,17 @@ var ImageLocalizer = class {
           log(`\u4EFB\u52A1\u91CD\u8BD5 (${task.retryCount}/${this.options.maxRetries}): ${task.file.path}`);
         }
       }
+      processed++;
+      onProgress?.(processed, total);
     }
     this.queue.setProcessing(false);
     log("\u56FE\u7247\u672C\u5730\u5316\u961F\u5217\u5904\u7406\u5B8C\u6210");
   }
   getQueueStats() {
     return this.queue.getStats();
+  }
+  clearProcessedMark(filePath) {
+    this.queue.unmarkAsProcessed(filePath);
   }
   clearQueue() {
     this.queue.clear();
@@ -27089,6 +27102,9 @@ var AttachmentLocalizationQueue = class {
   markAsProcessed(filePath) {
     this.processedPaths.add(filePath);
   }
+  unmarkAsProcessed(filePath) {
+    this.processedPaths.delete(filePath);
+  }
   isEmpty() {
     return this.queue.length === 0;
   }
@@ -27133,6 +27149,7 @@ function extractFileAttachmentFromContent(content) {
 }
 var AttachmentLocalizer = class {
   constructor(app, options) {
+    this.fileSavedAtMap = /* @__PURE__ */ new Map();
     this.app = app;
     this.vault = app.vault;
     this.queue = new AttachmentLocalizationQueue();
@@ -27178,7 +27195,6 @@ var AttachmentLocalizer = class {
         log(`\u6CA1\u6709\u9700\u8981\u672C\u5730\u5316\u7684\u9644\u4EF6: ${file.path}`);
         return;
       }
-      let content = await this.vault.read(file);
       const replacements = [];
       for (const attachment of attachments) {
         try {
@@ -27194,6 +27210,7 @@ var AttachmentLocalizer = class {
         }
       }
       if (replacements.length > 0) {
+        let content = await this.vault.read(file);
         for (const { original, local } of replacements) {
           content = content.split(original).join(local);
         }
@@ -27257,7 +27274,7 @@ var AttachmentLocalizer = class {
       labels: null,
       highlights: null,
       updatedAt: null,
-      savedAt: DateTime.now().toISO() ?? new Date().toISOString(),
+      savedAt: this.fileSavedAtMap.get(file.path) ?? DateTime.now().toISO() ?? new Date().toISOString(),
       pageType: "ARTICLE",
       content: null,
       publishedAt: null,
@@ -27271,13 +27288,17 @@ var AttachmentLocalizer = class {
       contentReader: null
     };
     const folderPath = render3(tempItem, this.options.attachmentFolder, this.options.folderDateFormat);
+    this.fileSavedAtMap.delete(file.path);
     return (0, import_obsidian13.normalizePath)(folderPath);
   }
   generateMarkdownLink(attachment, localPath) {
     const sizeInfo = attachment.fileSize ? ` (${attachment.fileSize})` : "";
     return `\u{1F4CE} [[${localPath}|${attachment.fileName}]]${sizeInfo}`;
   }
-  async enqueueFile(file) {
+  async enqueueFile(file, savedAt) {
+    if (savedAt) {
+      this.fileSavedAtMap.set(file.path, savedAt);
+    }
     const filePath = file.path;
     if (this.queue.isInQueue(filePath) || this.queue.isProcessed(filePath)) {
       return;
@@ -27293,12 +27314,14 @@ var AttachmentLocalizer = class {
       retryCount: 0
     });
   }
-  async processQueue() {
+  async processQueue(onProgress) {
     if (this.queue.isProcessing() || this.queue.isEmpty()) {
       return;
     }
     this.queue.setProcessing(true);
     log("\u5F00\u59CB\u5904\u7406\u9644\u4EF6\u672C\u5730\u5316\u961F\u5217...");
+    const total = this.queue.getStats().pending;
+    let processed = 0;
     while (!this.queue.isEmpty()) {
       const task = this.queue.dequeue();
       if (!task)
@@ -27314,12 +27337,17 @@ var AttachmentLocalizer = class {
           log(`\u4EFB\u52A1\u91CD\u8BD5 (${task.retryCount}/${this.options.maxRetries}): ${task.file.path}`);
         }
       }
+      processed++;
+      onProgress?.(processed, total);
     }
     this.queue.setProcessing(false);
     log("\u9644\u4EF6\u672C\u5730\u5316\u961F\u5217\u5904\u7406\u5B8C\u6210");
   }
   getQueueStats() {
     return this.queue.getStats();
+  }
+  clearProcessedMark(filePath) {
+    this.queue.unmarkAsProcessed(filePath);
   }
   clearQueue() {
     this.queue.clear();
@@ -27661,14 +27689,14 @@ var SyncContext = class {
   getProcessedFilesArray() {
     return Array.from(this.processedFiles.values());
   }
-  async enqueueFileForImageLocalization(file) {
+  async enqueueFileForImageLocalization(file, savedAt) {
     if (this.imageLocalizer) {
-      await this.imageLocalizer.enqueueFile(file);
+      await this.imageLocalizer.enqueueFile(file, savedAt);
     }
   }
-  async enqueueFileForAttachmentLocalization(file) {
+  async enqueueFileForAttachmentLocalization(file, savedAt) {
     if (this.attachmentLocalizer) {
-      await this.attachmentLocalizer.enqueueFile(file);
+      await this.attachmentLocalizer.enqueueFile(file, savedAt);
     }
   }
 };
@@ -27682,6 +27710,9 @@ var SyncNoticeManager = class {
     this.totalBlocks = 5;
     this.filledBlocks = 0;
     this.processedCount = 0;
+    this.phaseTotal = 0;
+    this.phaseProcessed = 0;
+    this.phaseLabel = "";
   }
   startSync() {
     this.mainNotice = new import_obsidian15.Notice("", 0);
@@ -27719,6 +27750,30 @@ var SyncNoticeManager = class {
   }
   showPhaseNotice(text) {
     this.phaseNotice = new import_obsidian15.Notice(text, 0);
+  }
+  startPhaseProgress(label, total) {
+    this.phaseLabel = label;
+    this.phaseTotal = total;
+    this.phaseProcessed = 0;
+    this.phaseNotice = new import_obsidian15.Notice("", 0);
+    this.phaseNotice.setMessage(this.renderPhaseBar());
+  }
+  onPhaseItemProcessed() {
+    this.phaseProcessed++;
+    if (this.phaseNotice) {
+      this.phaseNotice.setMessage(this.renderPhaseBar());
+    }
+  }
+  renderPhaseBar() {
+    const total = this.phaseTotal;
+    const processed = this.phaseProcessed;
+    const blocks = Math.max(total, 1);
+    const filled = "\u25A0";
+    const empty = "\u25A1";
+    const maxBlocks = Math.min(blocks, 10);
+    const filledCount = blocks <= 10 ? processed : Math.round(processed / total * maxBlocks);
+    const bar = Array(maxBlocks).fill(null).map((_, i) => i < filledCount ? filled : empty).join(" ");
+    return `${bar}  ${this.phaseLabel} ${processed}/${total}`;
   }
   completePhase() {
     if (this.phaseNotice) {
@@ -27855,8 +27910,9 @@ ${(0, import_obsidian16.stringifyYaml)({
     await this.context.app.vault.modify(omnivoreFile, `${newFrontMatterStr}
 
 ${existingContentWithoutFrontmatter}`);
-    await this.context.enqueueFileForImageLocalization(omnivoreFile);
-    await this.context.enqueueFileForAttachmentLocalization(omnivoreFile);
+    const batchSavedAt = batchItems[0]?.item.savedAt;
+    await this.context.enqueueFileForImageLocalization(omnivoreFile, batchSavedAt);
+    await this.context.enqueueFileForAttachmentLocalization(omnivoreFile, batchSavedAt);
     this.context.addProcessedFile(omnivoreFile);
     for (const b of wechatItems) {
       this.context.successTracker.recordSuccess(b.item.id);
@@ -27877,6 +27933,7 @@ var FileProcessor = class {
     this.context = context;
   }
   async process(item, normalizedPath, content, folderName, customFilename) {
+    this.currentSavedAt = item.savedAt;
     const existingByIndex = this.context.findFileById(item.id);
     if (existingByIndex) {
       const existingContent = await this.context.app.vault.read(existingByIndex);
@@ -27933,31 +27990,31 @@ var FileProcessor = class {
       }
     }
     const createdFile = await this.context.app.vault.create(newNormalizedPath, content);
-    await this.context.enqueueFileForImageLocalization(createdFile);
-    await this.context.enqueueFileForAttachmentLocalization(createdFile);
+    await this.context.enqueueFileForImageLocalization(createdFile, this.currentSavedAt);
+    await this.context.enqueueFileForAttachmentLocalization(createdFile, this.currentSavedAt);
     this.context.addProcessedFile(createdFile);
   }
   async updateFileIfNeeded(file, existingContent, newContent) {
     if (existingContent !== newContent) {
       await this.context.app.vault.modify(file, newContent);
     }
-    await this.context.enqueueFileForImageLocalization(file);
-    await this.context.enqueueFileForAttachmentLocalization(file);
+    await this.context.enqueueFileForImageLocalization(file, this.currentSavedAt);
+    await this.context.enqueueFileForAttachmentLocalization(file, this.currentSavedAt);
     this.context.addProcessedFile(file);
   }
   async createNewFile(normalizedPath, content) {
     try {
       const createdFile = await this.context.app.vault.create(normalizedPath, content);
-      await this.context.enqueueFileForImageLocalization(createdFile);
-      await this.context.enqueueFileForAttachmentLocalization(createdFile);
+      await this.context.enqueueFileForImageLocalization(createdFile, this.currentSavedAt);
+      await this.context.enqueueFileForAttachmentLocalization(createdFile, this.currentSavedAt);
       this.context.addProcessedFile(createdFile);
     } catch (error) {
       const errorMsg = error instanceof Error ? error.message : String(error);
       if (errorMsg.includes("File already exists")) {
         const existingFile = this.context.app.vault.getAbstractFileByPath(normalizedPath);
         if (existingFile instanceof import_obsidian17.TFile) {
-          await this.context.enqueueFileForImageLocalization(existingFile);
-          await this.context.enqueueFileForAttachmentLocalization(existingFile);
+          await this.context.enqueueFileForImageLocalization(existingFile, this.currentSavedAt);
+          await this.context.enqueueFileForAttachmentLocalization(existingFile, this.currentSavedAt);
           this.context.addProcessedFile(existingFile);
         }
       } else {
@@ -28336,6 +28393,7 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
   registerCoreComponents() {
     this.registerCommands();
     this.registerRibbonIcon();
+    this.registerFileMenu();
     if (this.settings.syncOnStart) {
       this.app.workspace.onLayoutReady(() => {
         setTimeout(() => {
@@ -28440,6 +28498,11 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
         this.settings.customQuery = getQueryFromFilter(this.settings.filter);
         needsSave = true;
       }
+      if (this.settings.frontMatterTemplate === "" && this.settings.frontMatterVariables.length === 0) {
+        this.settings.frontMatterTemplate = DEFAULT_SETTINGS.frontMatterTemplate;
+        needsSave = true;
+        log("\u524D\u7F6E\u5143\u6570\u636E\u6A21\u677F\u5DF2\u8FC1\u79FB\u5230\u65B0\u9ED8\u8BA4\u503C");
+      }
       const settingsWithLegacy = this.settings;
       if (typeof settingsWithLegacy.enableImageLocalization === "boolean") {
         log("\u68C0\u6D4B\u5230\u65E7\u7248\u56FE\u7247\u8BBE\u7F6E\uFF0C\u5F00\u59CB\u8FC1\u79FB...");
@@ -28487,6 +28550,49 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
     this.addRibbonIcon(iconId, iconId, async (evt) => {
       await this.fetchOmnivore();
     });
+  }
+  registerFileMenu() {
+    this.registerEvent(this.app.workspace.on("file-menu", (menu, file) => {
+      if (!(file instanceof import_obsidian19.TFile))
+        return;
+      if (file.extension !== "md")
+        return;
+      const hasImageLocalizer = this.settings.imageMode === "local" /* LOCAL */ && this.imageLocalizer;
+      const hasAttachmentLocalizer = !!this.attachmentLocalizer;
+      if (!hasImageLocalizer && !hasAttachmentLocalizer)
+        return;
+      menu.addItem((item) => {
+        item.setTitle("\u91CD\u65B0\u672C\u5730\u5316\u56FE\u7247/\u9644\u4EF6").setIcon("download").onClick(() => this.relocalizeFile(file));
+      });
+    }));
+  }
+  async relocalizeFile(file) {
+    const noticeManager = new SyncNoticeManager();
+    let totalPhases = 0;
+    if (this.imageLocalizer)
+      totalPhases++;
+    if (this.attachmentLocalizer)
+      totalPhases++;
+    noticeManager.startPhaseProgress("\u672C\u5730\u5316", totalPhases);
+    try {
+      if (this.imageLocalizer) {
+        this.imageLocalizer.clearProcessedMark(file.path);
+        await this.imageLocalizer.enqueueFile(file);
+        await this.imageLocalizer.processQueue();
+        noticeManager.onPhaseItemProcessed();
+      }
+      if (this.attachmentLocalizer) {
+        this.attachmentLocalizer.clearProcessedMark(file.path);
+        await this.attachmentLocalizer.enqueueFile(file);
+        await this.attachmentLocalizer.processQueue();
+        noticeManager.onPhaseItemProcessed();
+      }
+      noticeManager.completePhase();
+      new import_obsidian19.Notice(`\u672C\u5730\u5316\u5B8C\u6210: ${file.basename}`, 3e3);
+    } catch (error) {
+      logError("\u91CD\u65B0\u672C\u5730\u5316\u5931\u8D25:", error);
+      noticeManager.failPhase("\u672C\u5730\u5316\u5931\u8D25\uFF0C\u8BF7\u91CD\u8BD5");
+    }
   }
   onunload() {
     if (this.refreshTimeout) {
@@ -28842,10 +28948,12 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
       this.refreshFileExplorer();
       if (this.settings.imageMode === "local" /* LOCAL */ && this.imageLocalizer) {
         log("\u{1F5BC}\uFE0F \u5F00\u59CB\u5904\u7406\u56FE\u7247\u672C\u5730\u5316...");
-        if (manualSync)
-          noticeManager.showPhaseNotice("\u5904\u7406\u56FE\u7247\u4E2D...");
+        const imageQueueSize = this.imageLocalizer.getQueueStats().queueSize;
+        if (manualSync && imageQueueSize > 0) {
+          noticeManager.startPhaseProgress("\u5904\u7406\u56FE\u7247", imageQueueSize);
+        }
         try {
-          await this.imageLocalizer.processQueue();
+          await this.imageLocalizer.processQueue(manualSync ? () => noticeManager.onPhaseItemProcessed() : void 0);
           log("\u{1F5BC}\uFE0F \u56FE\u7247\u672C\u5730\u5316\u961F\u5217\u5904\u7406\u5B8C\u6210");
           if (manualSync)
             noticeManager.completePhase();
@@ -28872,10 +28980,12 @@ var OmnivorePlugin = class extends import_obsidian19.Plugin {
       }
       if (this.attachmentLocalizer) {
         log("\u{1F4CE} \u5F00\u59CB\u5904\u7406\u9644\u4EF6\u672C\u5730\u5316...");
-        if (manualSync)
-          noticeManager.showPhaseNotice("\u5904\u7406\u9644\u4EF6\u4E2D...");
+        const attachQueueSize = this.attachmentLocalizer.getQueueStats().pending;
+        if (manualSync && attachQueueSize > 0) {
+          noticeManager.startPhaseProgress("\u5904\u7406\u9644\u4EF6", attachQueueSize);
+        }
         try {
-          await this.attachmentLocalizer.processQueue();
+          await this.attachmentLocalizer.processQueue(manualSync ? () => noticeManager.onPhaseItemProcessed() : void 0);
           log("\u{1F4CE} \u9644\u4EF6\u672C\u5730\u5316\u961F\u5217\u5904\u7406\u5B8C\u6210");
           if (manualSync)
             noticeManager.completePhase();
