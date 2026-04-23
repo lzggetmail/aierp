@@ -1,0 +1,19 @@
+{
+  "id": "conv-1773970124010-3qv9w13d6",
+  "title": "Extract insights from Wukong platform PDF",
+  "titleGenerationStatus": "success",
+  "createdAt": 1773970124010,
+  "updatedAt": 1774428807427,
+  "lastResponseAt": 1774428807427,
+  "sessionId": "3eba1cf0-cd53-4ba8-97bf-07c74fbc44ad",
+  "sdkSessionId": "3eba1cf0-cd53-4ba8-97bf-07c74fbc44ad",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "rss_feeds": [
+    {
+      "name": "InfoQ中国",
+      "url": "https://www.infoq.cn/feed",
+      "category": "技术社区",
+      "keywords": ["架构", "微服务", "云原生", "AI", "大数据"],
+      "enabled": true,
+      "frequency": "hourly"
+    },
+    {
+      "name": "开源中国资讯",
+      "url": "https://www.oschina.net/news/rss",
+      "category": "技术资讯",
+      "keywords": ["开源", "AI", "云计算", "区块链"],
+      "enabled": true,
+      "frequency": "hourly"
+    },
+    {
+      "name": "CSDN资讯",
+      "url": "https://www.csdn.net/rss",
+      "category": "技术资讯",
+      "enabled": true,
+      "frequency": "hourly"
+    },
+    {
+      "name": "36氪科技",
+      "url": "https://36kr.com/feed",
+      "category": "科技资讯",
+      "keywords": ["AI", "企业服务", "新技术"],
+      "enabled": true,
+      "frequency": "hourly"
+    },
+    {
+      "name": "极客公园",
+      "url": "https://www.geekpark.net/rss",
+      "category": "科技资讯",
+      "enabled": true,
+      "frequency": "daily"
+    }
+  ],
+  "api_sources": [
+    {
+      "name": "arXiv CS.AI",
+      "type": "arxiv",
+      "category": "学术论文",
+      "query": "cat:cs.AI OR cat:cs.LG OR cat:cs.CV",
+      "keywords": ["smart city", "IoT", "digital twin", "urban computing"],
+      "max_results": 20,
+      "enabled": true,
+      "frequency": "daily"
+    },
+    {
+      "name": "arXiv CS.RO",
+      "type": "arxiv",
+      "category": "学术论文",
+      "query": "cat:cs.RO",
+      "keywords": ["robot", "autonomous", "navigation"],
+      "max_results": 10,
+      "enabled": true,
+      "frequency": "daily"
+    },
+    {
+      "name": "GitHub Trending Python",
+      "type": "github",
+      "category": "开源项目",
+      "language": "python",
+      "since": "weekly",
+      "topics": ["machine-learning", "deep-learning", "data-science", "ai"],
+      "enabled": true,
+      "frequency": "daily"
+    },
+    {
+      "name": "GitHub Trending Go",
+      "type": "github",
+      "category": "开源项目",
+      "language": "go",
+      "since": "weekly",
+      "topics": ["cloud", "kubernetes", "docker", "microservices"],
+      "enabled": true,
+      "frequency": "daily"
+    },
+    {
+      "name": "GitHub Smart City",
+      "type": "github",
+      "category": "开源项目",
+      "topic": "smart-city",
+      "since": "monthly",
+      "enabled": true,
+      "frequency": "weekly"
+    },
+    {
+      "name": "Dev.to AI",
+      "type": "devto",
+      "category": "技术博客",
+      "tag": "ai",
+      "per_page": 30,
+      "enabled": true,
+      "frequency": "daily"
+    },
+    {
+      "name": "Dev.to Machine Learning",
+      "type": "devto",
+      "category": "技术博客",
+      "tag": "machinelearning",
+      "per_page": 30,
+      "enabled": true,
+      "frequency": "daily"
+    },
+    {
+      "name": "Hacker News AI",
+      "type": "hackernews",
+      "category": "技术社区",
+      "query": "artificial intelligence",
+      "enabled": true,
+      "frequency": "daily"
+    }
+  ],
+  "curated_lists": [
+    {
+      "name": "Awesome AI",
+      "type": "github",
+      "repo": "owainlewis/awesome-artificial-intelligence",
+      "category": "资源列表",
+      "enabled": true,
+      "frequency": "weekly"
+    },
+    {
+      "name": "Awesome Machine Learning",
+      "type": "github",
+      "repo": "josephmisiti/awesome-machine-learning",
+      "category": "资源列表",
+      "enabled": true,
+      "frequency": "weekly"
+    },
+    {
+      "name": "Awesome IoT",
+      "type": "github",
+      "repo": "hq450/fancyss_history_data",
+      "category": "资源列表",
+      "enabled": true,
+      "frequency": "weekly"
+    },
+    {
+      "name": "Awesome Smart City",
+      "type": "github",
+      "repo": " topics/smart-city",
+      "category": "资源列表",
+      "enabled": true,
+      "frequency": "weekly"
+    }
+  ],
+  "newsletter_sources": [
+    {
+      "name": "TLDR AI",
+      "type": "newsletter",
+      "category": "AI资讯",
+      "keywords": ["AI", "机器学习", "深度学习"],
+      "enabled": false
+    },
+    {
+      "name": "The Sequence",
+      "type": "newsletter",
+      "category": "AI资讯",
+      "enabled": false
+    }
+  ]
+}

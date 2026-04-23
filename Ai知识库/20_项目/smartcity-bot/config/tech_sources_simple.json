@@ -1,0 +1,70 @@
+{
+  "consulting_reports": {
+    "sources": [
+      {
+        "name": "德勤中国",
+        "type": "report",
+        "keywords": ["德勤", "Deloitte", "咨询"],
+        "urls": ["https://www2.deloitte.com/cn/zh/insights.html"],
+        "frequency": "weekly"
+      },
+      {
+        "name": "麦肯锡中国",
+        "type": "report",
+        "keywords": ["麦肯锡", "McKinsey", "咨询"],
+        "urls": ["https://www.mckinsey.com.cn/insights/"],
+        "frequency": "weekly"
+      },
+      {
+        "name": "埃森哲",
+        "type": "report",
+        "keywords": ["埃森哲", "Accenture"],
+        "urls": ["https://www.accenture.com/cn-zh/insights"],
+        "frequency": "weekly"
+      }
+    ]
+  },
+  "tech_docs": {
+    "sources": [
+      {
+        "name": "华为技术支持",
+        "type": "whitepaper",
+        "keywords": ["华为", "Huawei"],
+        "urls": ["https://e.huawei.com/cn/material/technology"],
+        "frequency": "daily"
+      },
+      {
+        "name": "阿里云开发者",
+        "type": "tech_doc",
+        "keywords": ["阿里云", "Alibaba Cloud"],
+        "urls": ["https://developer.aliyun.com/article"],
+        "frequency": "daily"
+      },
+      {
+        "name": "腾讯云",
+        "type": "tech_doc",
+        "keywords": ["腾讯云", "Tencent Cloud"],
+        "urls": ["https://cloud.tencent.com/developer/article"],
+        "frequency": "daily"
+      }
+    ]
+  },
+  "gov_policies": {
+    "sources": [
+      {
+        "name": "国务院政策文件",
+        "type": "policy",
+        "keywords": ["智慧城市", "数字化", "新基建"],
+        "urls": ["http://www.gov.cn/zhengce/"],
+        "frequency": "daily"
+      },
+      {
+        "name": "发改委",
+        "type": "policy",
+        "keywords": ["新基建", "数字经济"],
+        "urls": ["https://www.ndrc.gov.cn/xxgk/zcfb/"],
+        "frequency": "daily"
+      }
+    ]
+  }
+}

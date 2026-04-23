@@ -1,0 +1,11 @@
+{
+  "project_name": "某科技园区智慧化改造项目",
+  "project_type": "智慧园区",
+  "project_type_is_custom": false,
+  "project_id": "SC20260124001",
+  "init_time": "2026-01-24 18:53:50",
+  "stakeholders": "张三（园区管委会主任）",
+  "budget_range": "500-800万",
+  "delivery_deadline": "2026年12月",
+  "user_raw_input": "{'project_name': '某科技园区智慧化改造项目', 'project_type': '智慧园区', 'stakeholders': '张三（园区管委会主任）', 'budget_range': '500-800万', 'delivery_deadline': '2026年12月'}"
+}

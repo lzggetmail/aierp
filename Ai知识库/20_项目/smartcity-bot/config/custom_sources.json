@@ -1,0 +1,70 @@
+[
+  {
+    "name": "数字化解决方案知识库",
+    "url": "https://wx.zsxq.com/group/88855248152252",
+    "group_id": "88855248152252",
+    "type": "zsxq",
+    "category": "行业报告",
+    "description": "数字化解决方案与行业洞察报告（星主：岚）",
+    "owner": {
+      "name": "岚",
+      "description": "咨询顾问",
+      "location": "浙江"
+    },
+    "enabled": true,
+    "priority": "high",
+    "tags": ["数字化", "咨询报告", "AI", "技术趋势"],
+    "content_types": {
+      "reports": ["德勤", "凯捷", "普华永道", "阿里"],
+      "tools": ["Heptabase", "Devonthink"],
+      "collections": ["年度报告合集", "英文报告合集"]
+    },
+    "local_storage": "~/.openclaw/workspace/zsxq-downloads/数字化解决方案知识库",
+    "api_config": {
+      "cookie_required": true,
+      "auth_type": "session",
+      "rate_limit": "500ms"
+    }
+  },
+  {
+    "name": "智慧城市之智慧交通（免费）",
+    "url": "https://wx.zsxq.com/group/51128488121484",
+    "group_id": "51128488121484",
+    "type": "zsxq",
+    "category": "智慧交通",
+    "description": "智慧交通领域专业知识分享",
+    "owner": {
+      "name": "行者",
+      "user_id": "548825282588244"
+    },
+    "enabled": true,
+    "priority": "medium",
+    "tags": ["智慧交通", "城市交通", "免费星球"],
+    "members_count": 15208,
+    "api_config": {
+      "cookie_required": true,
+      "auth_type": "session"
+    }
+  },
+  {
+    "name": "数字化转型ABC",
+    "url": "https://wx.zsxq.com/group/28855584411111",
+    "group_id": "28855584411111",
+    "type": "zsxq",
+    "category": "数字化转型",
+    "description": "数据领域老兵分享数字化转型经验",
+    "owner": {
+      "name": "丁峰",
+      "user_id": "421444541184418",
+      "description": "数据领域老兵，参与过两个大型股份制银行数字化转型"
+    },
+    "enabled": true,
+    "priority": "medium",
+    "tags": ["数字化转型", "数据仓库", "大数据"],
+    "members_count": 1428,
+    "api_config": {
+      "cookie_required": true,
+      "auth_type": "session"
+    }
+  }
+]

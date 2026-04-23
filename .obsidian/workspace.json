@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "e11f03d6c998ecb4",
+    "type": "split",
+    "children": [
+      {
+        "id": "82b41ee134c0bcc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59eae4b22befeebf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ai知识库/10_日记/学习实践CC的方法论04月21日.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "学习实践CC的方法论04月21日"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fa567231a937f9fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "946078d58a2f9de8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0473df7846b6bc6d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "81e7a32c2e99e7c0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e962f4a9895f8109",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f9614e444af7093c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4991371ff895d645",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bea7df551673bd43",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ai知识库/悟空平台/钉钉CLI化与Agent操作系统分析.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "钉钉CLI化与Agent操作系统分析 的反向链接列表"
+            }
+          },
+          {
+            "id": "0a711af0a48eb63c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ai知识库/悟空平台/钉钉CLI化与Agent操作系统分析.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "钉钉CLI化与Agent操作系统分析 的出链列表"
+            }
+          },
+          {
+            "id": "bef9d7c3ea65dc21",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b519ff5b7e60e892",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "9c94bb8935aa1f38",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ai知识库/悟空平台/钉钉CLI化与Agent操作系统分析.md",
+                "followCursor": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "钉钉CLI化与Agent操作系统分析 的大纲"
+            }
+          },
+          {
+            "id": "ceccb7578a389ff9",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 390.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "claudian:Open Claudian": false,
+      "notehelper:tongbuzhushou": false
+    }
+  },
+  "active": "59eae4b22befeebf",
+  "lastOpenFiles": [
+    "Ai知识库/10_日记/小天-OpenClaw没用吗-2026-03-17.md",
+    "Ai知识库/10_日记/学习实践CC的方法论04月21日.md",
+    "Ai知识库/10_日记/Multi-Agent方法论-晓辉博士.md",
+    "Ai知识库/10_日记/李一舟-OpenClaw一人公司-2026-03-17.md",
+    "Ai知识库/20_项目/杰成/Drawing 2026-04-16 10.55.43.excalidraw.md",
+    "Ai知识库/20_项目/杰成/讨论导读.md",
+    "Ai知识库/20_项目/杰成/杰成现场调研_04月10日 21_04 录音_原文.md",
+    "Ai知识库/20_项目/杰成/讨论.md",
+    "Ai知识库/20_项目/杰成/杰成方案讨论04月13日_18_29_录音_原文.md",
+    "笔记同步助手/2026-04-13/同步助手_2026-04-13.md",
+    "笔记同步助手/attachments/2026-04-12-阿东管理智慧与赛马运营洞察.txt",
+    "Ai知识库/40_知识库/智慧城市提示词/方案设计思路/东莞市企业总量数据.md",
+    "笔记同步助手/2026-04-13",
+    "笔记同步助手/2026-04-02/公司AI落地，本质上是一场权斗.md",
+    "笔记同步助手/2026-04-02",
+    "笔记同步助手/2026-04-04/144个AI员工一键部署：开源项目让AI团队建设变得极其简单.md",
+    "笔记同步助手/2026-04-04",
+    "Ai知识库/40_知识库/智慧城市提示词/方案设计思路/软件功能分析及功能清单拆解·专家级提示词.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/test/test_tech_selection.py",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/test/test_scheme_writer.py",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/test/test_project_understand.py",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/test/test_project_initiator.py",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/test/test_data_checker.py",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/test/test_info_summary.py",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/standard-io-format.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Tech_Selection.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_SOP_Main.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Scheme_Writer.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Scheme_Revise.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Scheme_Output.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Project_Understand.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Info_Summary.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Project_Initiator.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/skills/SmartCity_Data_Checker.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/智慧城市项目方案设计全流程执行完整提示词V3.md",
+    "Ai知识库/40_知识库/智慧城市提示词/智慧城市方案设计Agent/智慧城市方案设计sop/智慧城市项目方案设计全流程执行完整提示词V2.md",
+    "检测/11-20/16-20/19.软件/96.未来智慧数字化孪生模型搭建标准系统.jpg",
+    "检测/11-20/16-20/19.软件/95.未来智慧中央数据处理系统.jpg",
+    "检测/11-20/16-20/19.软件/94.未来智慧智能访客管理系统.jpg",
+    "检测/11-20/16-20/19.软件/93.未来智慧招采协同管理系统.jpg",
+    "检测/11-20/16-20/19.软件/92.未来智慧寻车系统.jpg",
+    "检测/11-20/16-20/19.软件/91.未来智慧信息系统流程管理系统.jpg",
+    "检测/11-20/16-20/19.软件/90.未来智慧项目协同管理系统.jpg",
+    "检测/11-20/16-20/19.软件/89.未来智慧物联网灵活部署与优化存储系统.jpg",
+    "检测/11-20/16-20/19.软件/88.未来智慧客户关系管理系统.jpg",
+    "检测/11-20/16-20/19.软件/87.未来人力资源智慧管理系统.jpg"
+  ]
+}

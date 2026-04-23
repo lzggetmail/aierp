@@ -1,0 +1,2858 @@
+[
+  {
+    "title": "Rivet 发布 Sandbox Agent SDK，解决 Agent API 碎片化问题",
+    "url": "https://www.infoq.cn/article/9wBHVhzl3hoUORHLyULU?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/9wBHVhzl3hoUORHLyULU?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 12:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "当数据库遇上多模态：腾讯云 TDSQL Boundless 如何释放数据深层价值？",
+    "url": "https://www.infoq.cn/article/YHvr48IeZBO9K4ZqUOfk?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/YHvr48IeZBO9K4ZqUOfk?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 11:26:33 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "千问3.5开源四连发，马斯克点赞：智能密度令人印象深刻",
+    "url": "https://www.infoq.cn/article/d16BDGbvBatj6eFYcFdS?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/d16BDGbvBatj6eFYcFdS?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 11:16:28 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "TypeScript 6 Beta版发布：开发者受邀升级以迎接Go重写计划",
+    "url": "https://www.infoq.cn/article/Yt6PtO77lmGmCBGPOk0H?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/Yt6PtO77lmGmCBGPOk0H?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 11:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "杀死“流水线”： ListenHub 如何构建 AI 时代的液态超级团队｜QCon北京",
+    "url": "https://www.infoq.cn/article/a6WQAG7bXj0VPjjVtMKE?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/a6WQAG7bXj0VPjjVtMKE?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 10:36:28 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "开发者欢呼，普通人迷茫：OpenClaw之后，“可用AI”的路该怎么走？",
+    "url": "https://www.infoq.cn/article/Br5brKyveOf15uEgOzvX?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/Br5brKyveOf15uEgOzvX?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 10:17:31 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "吴恩达复盘百度岁月：我带过的自动驾驶、智能音箱都成了！Altman我也带过，但 Gemini 3 比 ChatGPT 强",
+    "url": "https://www.infoq.cn/article/rMpEkDCLZ4cfIWaERi1B?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/rMpEkDCLZ4cfIWaERi1B?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 10:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Databricks推出面向AI工作负载的PostgreSQL数据库Lakebase",
+    "url": "https://www.infoq.cn/article/GdARgp4bG83LP5oXMZar?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/GdARgp4bG83LP5oXMZar?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Tue, 03 Mar 2026 09:41:47 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "“传统设计流程已死”！IDE成Claude设计负责人新宠：Anthropic人人写代码，最不怕Bug",
+    "url": "https://www.infoq.cn/article/67Pq2VBLhpbKiRWIJWui?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/67Pq2VBLhpbKiRWIJWui?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 18:39:26 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "智械盛宴下的孤岛：AI、资本与知识生态的隐秘危机",
+    "url": "https://www.infoq.cn/article/CipE6FbwVFaLUtXj3G5U?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/CipE6FbwVFaLUtXj3G5U?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 17:50:50 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "蚂蚁阿福：从 0 到生产的医疗 Agent 工程化落地｜QCon北京",
+    "url": "https://www.infoq.cn/article/UbyRYdBINl5BJxElkJGj?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/UbyRYdBINl5BJxElkJGj?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 15:12:19 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "使用MCP、OPA和临时运行时为基础设施自动化构建一个最小权限AI智能体网关",
+    "url": "https://www.infoq.cn/article/Lh3AppcUclgbul3phl2U?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/Lh3AppcUclgbul3phl2U?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 15:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Hugging Face推出Community Evals功能，促进模型测试透明化",
+    "url": "https://www.infoq.cn/article/cglzA4vAI8D0HO6UGYlW?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/cglzA4vAI8D0HO6UGYlW?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 14:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Anthropic 研究：AI 编程辅助使开发者技能掌握度下降 17%",
+    "url": "https://www.infoq.cn/article/ohmt2y4R8NHXPL6DSvHR?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/ohmt2y4R8NHXPL6DSvHR?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 14:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "别再谈“10 倍开发者”了：AI 智能体不是加速 SDLC，而是直接终结 SDLC",
+    "url": "https://www.infoq.cn/article/HgmbXbAFT1E0T6qcuia0?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/HgmbXbAFT1E0T6qcuia0?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 12:08:39 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Cloudflare为R2引入本地上传功能，跨区域写入延迟降低75%",
+    "url": "https://www.infoq.cn/article/klTAPJsfYeppQVQabE4z?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/klTAPJsfYeppQVQabE4z?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 12:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "OpenAI扩展单主节点PostgreSQL，以处理ChatGPT每秒数百万次的查询",
+    "url": "https://www.infoq.cn/article/LxfKX2WTqbG6flW9KcZ1?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/LxfKX2WTqbG6flW9KcZ1?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 11:00:00 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "把320个Claude Code实例拉成一支“智能体团队”！Steve Yegge：年底前，写软件不再“敲代码”，而是像玩“策略调度”游戏",
+    "url": "https://www.infoq.cn/article/fljep6VyWggpxhCA89Xy?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/fljep6VyWggpxhCA89Xy?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 10:54:33 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "昆仑万维：AI编程能力纳入绩效考核，实行末位淘汰；云厂大规模宕机，员工曝是自家AI干的；Claude被特朗普封杀后登顶App Store | AI周报",
+    "url": "https://www.infoq.cn/article/uPXx6b3pmlGG9MXE4vHH?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/uPXx6b3pmlGG9MXE4vHH?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 10:22:19 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "亚马逊云科技支持通过RDS for SQL Server数据库事件触发Lambda函数",
+    "url": "https://www.infoq.cn/article/Y4ZTGxlJZEeW2XeTQpLh?utm_source=rss&utm_medium=article",
+    "source": "InfoQ中国",
+    "category": "技术社区",
+    "summary": "<div align=\"right\"><a href=\"https://www.infoq.cn/article/Y4ZTGxlJZEeW2XeTQpLh?utm_source=rss&amp;utm_medium=article\">点击查看原文></a></div>",
+    "published": "Mon, 02 Mar 2026 10:21:36 GMT",
+    "tags": [
+      "架构",
+      "微服务",
+      "云原生",
+      "AI",
+      "大数据"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "LibreOffice 26.2.1 发布",
+    "url": "https://www.oschina.net/news/407218/libreoffice-26-2-1-released",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "LibreOffice 26.2.1 现已发布，这是 LibreOffice 26.2 分支的首个维护更新。此次更新基于 2026 年 2 月 4 日发布的主要功能版本，修复了部分错误并提升了稳定性。 LibreOffice 26.2 为日常办公流程引入了诸多改进，包括 Markdown 导入导出、Calc 中的 connector shapes、多用户 Base、更快的 EPUB 导出速度，以及在 macO...",
+    "published": "Tue, 03 Mar 2026 15:28:12 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "SQLAlchemy 2.0.48 发布",
+    "url": "https://www.oschina.net/news/407207/sqlalchemy-2-0-48-released",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "SQLAlchemy 2.0.48 现已发布。 SQLAlchemy 是一个 Python 的 SQL 工具包以及数据库对象映射 (ORM) 框架。它包含整套企业级持久化模式，专门用于高效和高性能的数据库访问。 版本 2.0.48 修复了一个潜在的并发问题，该问题可能会影响自定义的“on connect”例程，特别是 SQL Server 方言使用的例程。 更多 2.0.48 的详细变...",
+    "published": "Tue, 03 Mar 2026 14:52:07 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "美团“Tabbit浏览器”回应抄袭开源项目代码",
+    "url": "https://www.oschina.net/news/407201",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "美团Tabbit浏览器团队刚刚发文澄清Tabbit涉嫌抄袭开源项目陪读蛙一事，称将从Tabbit浏览器新版中移除此翻译项目，并已按开源社区规范将此项目完整开源。 Tabbit浏览器团队称，2025年12月30日，团队在开发翻译功能时关注到read-frog陪读蛙开源项目（开源地址：https://github.com/Tabbit-Browser/read-frog），彼时该项目...",
+    "published": "Tue, 03 Mar 2026 14:33:13 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "QuestMobile 发布 2025 年 AI 应用层发展核心报告",
+    "url": "https://www.oschina.net/news/407193",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "市场调研机构 Quest Mobile 发布《2025 年 AI 应用层发展核心报告》。数据显示，截止到2025年12月，国内AI应用市场规模实现了从量到质的跨越：移动端AI应用、手机厂商AI助手、PC端AI应用的月活跃用户规模分别达到7.22亿、5.59亿、2.05亿。 移动端AI应用、手机厂商AI助手的月活规模在整体用户大盘中的占比已经分别达到56....",
+    "published": "Tue, 03 Mar 2026 14:21:04 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "openKylin 社区 2026 年 2 月运营报告",
+    "url": "https://www.oschina.net/news/407189",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "一、社区大事件 1.发布《2025年度OpenAtom openKylin社区全景案例集》（以下简称‘案例集’）。在2024版的基础上，新增收录了社区成员们在2025年的杰出技术成果和行业应用案例共40余项。通过这些案例，读者可以深入了解openKylin社区在技术创新、AI智能融合、应用生态拓展、行业应用等方面的最新进展，为广大技术爱好者、...",
+    "published": "Tue, 03 Mar 2026 14:10:47 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "🚀 Xinference v2.2.0 最新更新：✨支持新一代大模型",
+    "url": "https://www.oschina.net/news/407183",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "Xorbits Inference（Xinference）是一个 性能强大且功能全面的 分布式 推理框架。可用于大语言模型（LLM），语音识别模型，多模态模型等各种模型的推理。通过 Xorbits Inference，你可以轻松地 一键部署你自己的模型或内置的前沿开源模型 - https://github.com/xorbitsai/inference。无论你是研究者，开发者，或是数据科...",
+    "published": "Tue, 03 Mar 2026 13:52:37 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": ":fire:License Manager Python SDK 正式发布！现已支持 Python 生态",
+    "url": "https://www.oschina.net/news/407182",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "License Manager Python SDK 正式发布 大家好！我们非常高兴地宣布，License Manager Python SDK 现已正式发布！:tada: 作为 License Manager 授权管控中枢的官方 Python 客户端，本次发布的 SDK 专为各类的 Python 软件项目、AI 算法模型落地以及跨平台的私有化部署应用量身打造。我们的目标是为广大 Python 开发者提供...",
+    "published": "Tue, 03 Mar 2026 13:52:05 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": ":fire: SolonCode v0.0.16 发布 - 终端智能助手（或编码智能体）",
+    "url": "https://www.oschina.net/news/407181/soloncode-0-0-16-released",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "SolonCode SolonCode 是基于 Java 8 + Solon AI 和 “沙盒” 概念开发的 “Claude Code” 开源实现版本。它不仅是一个 AI 终端智能助手（帮你查资料，生成图片、视频，陪你聊天等...），更是一个深度集成开发环境、支持多种 AI 协议（ACP/MCP）的 全栈 AI 编程智能体。 核心理念： 强大技能：完全兼容 Claude Code Agen...",
+    "published": "Tue, 03 Mar 2026 13:51:27 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "阿里开源 4 款 Qwen3.5 小尺寸模型",
+    "url": "https://www.oschina.net/news/407154",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "阿里宣布开源 4 款 Qwen3.5 小尺寸模型，包括 Qwen3.5‑0.8B、2B、4B 与 9B。 新模型延续 Qwen3.5 家族的多模态训练方式与最新架构设计，覆盖从端侧到服务器侧的多种资源条件，官方强调其在同尺寸模型中均达到领先性能。 📌 0.8B / 2B：极致轻量，端侧首选 特点：体积极小，推理速度极快。 场景：非常适合移动设备、I...",
+    "published": "Tue, 03 Mar 2026 11:47:35 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "TrafficPilot 1.0.4 发布，DNS 重定向，无需改写 hosts 文件",
+    "url": "https://www.oschina.net/news/407151/trafficpilot-1-0-4-released",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "TrafficPilot 是一款 Windows 平台的网络流量代理转发工具，能够将指定进程的网络流量重定向到代理服务器。该工具提供图形化配置界面、系统托盘驻留和实时日志统计功能，特别适合为无法直接设置代理的软件转发网络请求。在多网络环境下，该工具可以让不同的软件使用不同的网络出口，非常实用。 更新内容: 自动下载 GitH...",
+    "published": "Tue, 03 Mar 2026 11:40:08 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "JetBrains 联合 Zed 推出官方 ACP 智能体注册表",
+    "url": "https://www.oschina.net/news/407150",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "JetBrains 宣布与 Zed 联合推出了官方 ACP 智能体注册表，一个直接集成在 JetBrains IDE 和 Zed 中的 AI 编码智能体目录。 智能体客户端协议 (Agent Client Protocol, ACP) 是一项开放标准，旨在让任何 AI 编码智能体都能在任何支持该协议的编辑器中无缝运行。开发者只需实现一次 ACP 协议，其智能体即可在 JetBrains ID...",
+    "published": "Tue, 03 Mar 2026 11:29:10 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Flux 2.8 正式发布",
+    "url": "https://www.oschina.net/news/407143/flux-2-8-0-released",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "Flux v2.8.0 现已正式发布。 亮点 Flux v2.8 支持 Helm v4，引入了服务端应用（server-side apply）和增强的健康检查功能。本次发布还带来了 Flux 控制器的多项新特性： 缩短 Flux 管理应用的平均恢复时间 基于 CEL 表达式对 Helm 管理对象进行就绪度评估 ArtifactGenerator 支持提取并修改 Helm Chart 支持从 Flux 通知...",
+    "published": "Tue, 03 Mar 2026 11:11:44 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "理想汽车发布端侧大模型“软硬协同设计定律”，为下一代自研芯片奠定基础",
+    "url": "https://www.oschina.net/news/407130",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "理想汽车联合国创决策智能技术研究所正式发布端侧大模型“软硬协同设计定律”，提出面向车载与边缘场景的大模型软硬一体化设计方法，为下一代智能驾驶芯片的架构定义提供了系统性理论基础。 据介绍，此次发布的“软硬协同设计定律”首次建立了可量化、可预测的软硬协同数学框架，通过对模型精度与推理延迟进行联合建模，...",
+    "published": "Tue, 03 Mar 2026 10:56:39 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Elasticsearch 9.3 增加 bfloat16 向量 支持",
+    "url": "https://my.oschina.net/u/3343882/blog/19208423",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "Elasticsearch 9.3 带来了多项针对向量数据的重要改进，包括一个新的 element_type： bfloat16。这有可能将你的向量数据存储减半，并且在大多数使用场景下，对召回率和运行时性能的影响都非常小。",
+    "published": "Tue, 03 Mar 2026 10:44:43 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "字节预热下一代空间操作系统 PICO OS 6",
+    "url": "https://www.oschina.net/news/407122",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "字节跳动旗下 PICO 正式预告了下一代空间操作系统 PICO OS 6，并宣布将在今年推出全新 XR 旗舰产品「Project Swan」。 据悉，PICO OS 6 实现了 2D 应用、3D 体验、虚拟环境与物理现实的无缝融合，支持空间多任务处理。交互方式涵盖眼手追踪、手势、手柄、键鼠等多种模式。 生态层面，系统全面兼容空间应用、OpenXR、Web...",
+    "published": "Tue, 03 Mar 2026 10:31:01 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "马斯克称赞阿里巴巴 Qwen 模型",
+    "url": "https://www.oschina.net/news/407120",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "阿里通义千问团队宣布推出 Qwen3.5 小尺寸模型系列，包括 Qwen3.5-0.8B、Qwen3.5-2B、Qwen3.5-4B、Qwen3.5-9B，同时提供对应的基础（Base）版本。号称“更智能，更省力。” Qwen 团队表示，这一系列模型基于相同的 Qwen3.5 架构构建 —— 原生多模态、优化架构、可扩展 RL。其中： 0.8B /2B：体积小巧、运行迅捷，完美适...",
+    "published": "Tue, 03 Mar 2026 10:22:32 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Linux 项目宣布延长多个 LTS 内核版本支持周期",
+    "url": "https://www.oschina.net/news/407119",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "稳定版内核维护者 Greg Kroah-Hartman 和 Sasha Levin 近日宣布，Linux 项目将延长多个长期支持（LTS）内核版本的维护时间。 其中，Linux 6.6 的计划终止支持时间由原定的 2026 年 12 月延长至 2027 年 12 月，使其实际维护周期从 3 年延长为 4 年。这一调整被视为对此前“LTS 版本支持期缩短至两年”政策的一次修正，在...",
+    "published": "Tue, 03 Mar 2026 10:09:12 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Apache Kvrocks 2.15.0 发布",
+    "url": "https://www.oschina.net/news/407118/kvrocks-2-15-0-released",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "Apache Kvrocks 2.15.0 版本已经发布，除了新增更多命令之外，此版本也在兼容性以及稳定性方面有不少的提升。 以下是几个值得关注的变更： 支持兼容 Redis 的 SELECT [Database] 功能 新增更多 TimeSeries 命令，包含 TS.MREVRANGE、TS.QUERYINDEX 和 TS.ALTER，补齐了面向分析型高负载场景的时序 API 能力 新增更堵 TD...",
+    "published": "Tue, 03 Mar 2026 10:09:07 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "阿里巴巴将大模型品牌统一为千问",
+    "url": "https://www.oschina.net/news/407116",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "阿里巴巴宣布将大模型B端品牌和C端应用品牌统一为千问。 千问大模型（Qwen）涵盖基础大模型和专业领域模型，千问APP是阿里巴巴在C端的旗舰AI应用。为了避免之前千问、通义千问、Qwen 等多个名称导致的混淆问题，统一名称之后，阿里巴巴大模型品牌中文为“千问大模型”，英文为“Qwen”。“通义千问”的名称将不再使用。“...",
+    "published": "Tue, 03 Mar 2026 09:58:37 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "WSL Dashboard v0.5.0 开源发布，一款 WSL 实例管理面板",
+    "url": "https://www.oschina.net/news/407109/wsl-dashboard-0-5-0-released",
+    "source": "开源中国资讯",
+    "category": "技术资讯",
+    "summary": "元宵到，祝福到！愿你代码无bug，生活无烦恼，元宵甜蜜蜜，快乐常相伴！ 更新日志： 1、设置界面增加WSL2全局设置入口(~/.wslconfig)。 2、发行版配置 /etc/wsl.conf 。 3、优化已安装的发新版列表刷新策略(侧边栏选中首页，且非关闭至系统栏托盘，才会定时刷新)。 4、USB设备管理(基于usbipd-win提供Windows系统插入的U...",
+    "published": "Tue, 03 Mar 2026 09:19:16 +0800",
+    "tags": [
+      "开源",
+      "AI",
+      "云计算",
+      "区块链"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "黄金频段争夺战打响，华为发布U6GHz完整产品矩阵丨MWC 2026",
+    "url": "https://36kr.com/p/3705512345170309?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p>作者丨邱晓芬</p>\n  <p>编辑丨苏建勋</p>\n  <p>在2026世界移动通信大会（MWC 2026）中偌大的1号馆里，华为几乎占据了一半以上的位置。这么大的空间和篇幅，华为想重点传递的关键词是U6GHz。</p>\n  <p>为了实现6G这一遥远的蓝图，近期，全球已掀起了一场U6GHz（6.425-7.125 GHz）的探索热潮，阿联酋、巴西及欧洲等多国各大运营商近期纷纷完成了相应的万兆体验速率验证。</p>\n  <p>简单理解，U6GHz就像是一个“黄金频段”，由于在容量、覆盖、成本这三个维度取得了的最佳平衡，其即将成为未来十年移动网络扩容和升级的核心资源，可以理解为是未来部署5G-A、6G的关键“高速公路”。</p>\n  <p>在MWC 2026期间，华为发布了一系列关于U6GHz的产品和解决方案，覆盖<strong>宏站、小站及微波等完整矩阵。</strong></p>\n  <p>尽管U6GHz拥有众多优点，却并不完美，拥有频率高、损耗大的天生短板，就像是无法“跑远路”。</p>\n  <p>为此，华为为此推出了“AAU系列化产品矩阵”，最大的突破在于，相比传统的天线",
+    "published": "2026-03-03 13:25:28  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "荣耀“转型”：发布Robot Phone和首款人形机器人丨MWC 2026",
+    "url": "https://36kr.com/p/3705522207289479?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p>作者丨邱晓芬</p>\n  <p>编辑丨苏建勋</p>\n  <p>在2026世界移动通信大会（MWC 2026）上，荣耀发布的人形机器人、Robot Phone吸引了大量观众的目光。</p>\n  <p>在Robot Phone上，荣耀打破了过去“黑色方块”的设计，将微型相机和云台系统塞进了手机里。</p>\n  <p>据介绍，Robot Phone最大的技术挑战之一在于，如何在有限的手机空间中塞进机械臂和电机，这意味着，其上的微型电机必须同时满足高强度和轻量化。</p>\n  <p>为此，荣耀将折叠屏手机所用的高性能材料用到了 Robt Phone的电机核心组件上，并借助手机上的仿真技术，对每一个零件进行结构优化。</p>\n  <p>从发布会上看，在 4DoF（自由度）的云台系统帮助下，Robot Phone能像人的脖子一样，追随着拍摄对象转动，实时变换拍摄方位。</p>\n  <p>当然，影像也是Robot Phone上的一大看点。除了防抖和两亿像素之外，在发布会上，荣耀还宣布与影像设备品牌阿莱（ARRI）合作，双方将在色彩科学、电影视觉、专业制作流程等方面展开合作。未来，这一系列成果",
+    "published": "2026-03-03 13:24:59  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "前小米高管创业机器人，用“爆品逻辑”做工业通用具身智能",
+    "url": "https://36kr.com/p/3706592101691525?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p><strong>文｜富充</strong></p>\n  <p><strong>编辑｜苏建勋</strong></p>\n  <p>小雨智造创始人乔忠良身上，有着“小米系”具身智能创业者的典型特质：善于寻找落地场景，商业化思路很务实。</p>\n  <p>2023年2月成立起，小雨智造就瞄准“工业通用具身智能”的目标。焊接机器人作为“沿途下蛋”的第一款产品，在2025年第四季度进入客户产线。</p>\n  <p>2010年，北航计算机系硕士毕业后，乔忠良加入创业阶段的小米，成为小米首位应届生；离职时，他已经担任小米MIUI研发负责人5年，创下小米从应届生晋升到总经理的最快纪录。</p>\n  <p>供职小米的13年里，乔忠良先后参与手机系统与MIUI从0到1的研发迭代，主导“一次开发、多端部署”的软件架构变革，让同一套系统可在手机、手表、电视等多终端部署。</p>\n  <p>这段经历为乔忠良积累了大规模软硬协同系统的整合经验，也让他对“通用性”有着近乎偏执的坚持：<strong>要做能底层逻辑复用的智能产品。更通俗地说，不是给每个设备单独造一个“脑子”，而是造一个通用的“大脑”，可以控制不",
+    "published": "2026-03-03 10:25:34  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "一条内裤的“远征”： 巴迪高试图用“0手触”撬动一次性内裤的信任缺口 |  早期项目",
+    "url": "https://36kr.com/p/3697641252646531?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p>近两年，一次性内裤在国内市场进入高速增长期。</p>\n  <p>在旅行出游频繁、“懒人经济”持续升温的背景下，这一原本存在感不高的品类，正从边缘产品走向大众消费的视野。除户外、差旅等高频使用场景外，一次性内裤也逐渐渗透至产后恢复、医疗护理等领域，需求不断外扩，带动纺织服饰、母婴等赛道品牌加速入场，形成一股新的消费热潮。相关数据显示，2022—2024年，我国一次性内裤市场增速超过200%，整体规模已迈入百亿行列。</p>\n  <p>&nbsp;但在消费热度快速攀升的同时，行业的另一面也逐渐显现。尽管市场监管总局已于2024年7月发布《一次性使用卫生用品卫生要求》（GB 15979—2024）强制性国家标准，并首次将“一次性内裤”单独列出、明确卫生与安全要求，但在行业狂飙突进之下，作坊式生产、货不对板等问题仍然存在。</p>\n  <p>在以上前提背景下，36氪了解到：1月30日，旅行日用品牌巴迪高全球首个纯棉一次性内裤自动化生产线在浙江金华正式投产运营，试图在纯棉一次性内裤的面料剪裁、缝纫过程中引入“0手触”的机械化生产方式，来实现消费者对一次性内裤卫生、安全的基本诉求。</p>\n",
+    "published": "2026-03-03 10:16:44  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "「PureblueAI清蓝」完成数千万元天使轮融资，发布首款AI口碑营销数字员工",
+    "url": "https://36kr.com/p/3705907852800136?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p>作者 | 邓咏仪</p>\n  <p>编辑 | 苏建勋</p>\n  <p>36氪获悉，国内AI营销技术服务公司「PureblueAI清蓝」正式宣布完成数千万元人民币天使轮融资。本轮融资由祥峰中国（Vertex China）领投，老股东英诺基金及一村淞灵、36氪跟投。</p>\n  <p>本轮融资资金，将主要用于新一代产品开发与技术迭代、全行业生态拓展及业务布局，同时将持续携手投资方与生态伙伴，打造 AI 口碑营销领域的标杆性解决方案，助力更多企业在 AI 时代实现确定性增长。</p>\n  <p>36氪此前<a href=\"https://36kr.com/p/3457618008921735\" rel=\"noopener noreferrer\" target=\"_blank\">曾报道PureblueAI清蓝</a>。公司成立于2025年，创始团队成员毕业于清华大学、中科院等高校，曾任字节跳动、阿里巴巴等企业高管和技术专家。</p>\n  <p>此前，PureblueAI清蓝还曾于2025年8月获得由英诺基金与蓝色光标共同领投、水木清华校友种子基金跟投的超千万元人民币种子轮融资。</p>",
+    "published": "2026-03-03 09:00:26  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "8点1氪丨椰树集团再陷擦边营销风波被约谈；电影难看20分钟内可退款40%，一影院试行“观影后悔权”；中欧航线票价暴涨",
+    "url": "https://36kr.com/p/3706462657245318?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<h2>今日热点导览</h2>\n  <p>伊朗称霍尔木兹海峡已关闭： “不会让一滴石油流出”</p>\n  <p>雷军：小米机器人已在汽车工厂实习，未来5年大批人形机器人进厂</p>\n  <p>亚马逊在阿联酋数据中心遭撞击起火</p>\n  <p>多家金店暂停投资金条销售</p>\n  <p>北京银行贵金属业务出现BUG</p>\n  <p>BOSS直聘称网传伊朗急招炮兵照片系P图</p>\n  <h2>TOP3大新闻</h2>\n  <p><strong>海口市监局回应椰树低俗广告，已约谈企业</strong></p>\n  <p>近日，海南椰树集团因工厂参观区内悬挂涉嫌低俗内容的宣传广告，再次被推上舆论风口浪尖。3月2日，海口市监局就椰树集团工厂内悬挂的低俗广告约谈企业，要求整改。据南方都市报报道，近日椰树集团对外开放工厂参观，本是拉近与消费者距离、展示品牌实力的正向举措，却因厂区内“大大大，椰树女员工胸这么大”“追求胸大是让婴儿有奶吃”等涉嫌低俗的广告语，引发了网友广泛投诉与舆论争议。这些广告语被指不仅违背社会公序良俗，更涉嫌将女性身体特征作为营销噱头。3月2日，界面新闻就此事向椰树官方客服询",
+    "published": "2026-03-03 08:11:42  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "专访资深公关品牌专家吴猛:情绪传播时代企业公关的情感叙事与长效信任构建",
+    "url": "https://36kr.com/p/3705917499601285?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p><img src=\"https://img.36krcdn.com/hsossms/20260302/v2_e7681fa73cdb4f64861cb12bf7f4099a@1770672271_oswg103773oswg605oswg766_img_jpg?x-oss-process=image/quality,q_100/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\" contenteditable=\"false\">公关专家吴猛</p>\n  <p>在媒介化社会深度演进、社交媒体重构传播生态的当下，情绪传播已成为当前舆论场的一个核心表征，传统以事实为核心的公关范式开始向“事实与情绪并重”的方向发展。情绪传播时代，企业公关如何重构情感叙事、搭建与公众的情感共振桥梁、实现品牌信任的长效构建？带着这些问题，我们专访了资深公关品牌专家吴猛。<br /></p>\n  <p>吴猛拥有丰富的公共关系和品牌管理经验，并先后在联想集团、蓝色光标、京东集团担任高级管理职务，期间，他亲历并主导了多个快消、互联网、金融等不同领域知名企业的品牌",
+    "published": "2026-03-02 22:54:53  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "氪星晚报｜马斯克称第二代星链卫星将提供5G速度的太空互联网服务；调整住宿税，日本京都预计增收132亿日元；卢伟冰：小米今年即将发布全新的机器人产品",
+    "url": "https://36kr.com/p/3705604996952453?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<h2><strong>大公司：</strong></h2>\n  <p><a href=\"https://36kr.com/newsflashes/3705588406808712\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>智元机器人等在安徽成立华智天成科技新公司</strong></a></p>\n  <p>36氪获悉，爱企查App显示，近日，安徽华智天成科技有限公司成立，法定代表人为肖智成，注册资本约1176万元人民币，经营范围包括计算机软硬件及辅助设备零售、计算机软硬件及辅助设备批发、软件销售、通信设备销售等。股东信息显示，该公司由智元机器人关联公司智元创新科技股份有限公司、天水华天电子集团股份有限公司等共同持股。</p>\n  <p><a href=\"https://36kr.com/newsflashes/3705585585566080\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>海螺新型建材有限公司在肥东成立</strong></a></p>\n  <p>36氪",
+    "published": "2026-03-02 17:47:01  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "成都六类人才可享租房补贴，最高补贴比例达100%",
+    "url": "https://36kr.com/p/3705502776652168?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p>2月28日，成都市住房和城乡建设局等四部门联合发布《成都市人才优租行动实施细则》，针对符合条件的六类市级人才，给予相应的人才补贴，补贴比例从50%到100%不等，而补贴面积最高为50平方米。</p>\n  <p>该《细则》自2026年4月1日起实施，有效期5年。</p>\n  <p>从人才惠及范围看，首先是在成都市行政区域范围租住保障性租赁住房（不含纳入保障性租赁住房管理的居民自有住房）的市级A、B、C、D、E类人才。</p>\n  <p>另外，还有人才认定地在县市新城（简阳市、都江堰市、彭州市、邛崃市、崇州市、金堂县、大邑县、蒲江县），并在认定地租住保障性租赁住房（不含纳入保障性租赁住房管理的居民自有住房）的市级F类人才。</p>\n  <p>具体补贴标准上，根据《细则》要求，A、B、C、D、E类人才补贴比例分别为100%、100%、70%、50%、50%，补贴面积上限为50平方米；人才认定地在县市新城的成都市市级F类人才，在认定地租住，补贴比例为50%。</p>\n  <p>值得注意的是，所有人才租金补贴面积的上限为50平方米。实际租住建筑面积不超过50平方米的，按实际面积计算补贴；超",
+    "published": "2026-03-02 16:21:42  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "破局能源焦虑：正泰安能定义户用光伏下半场",
+    "url": "https://36kr.com/p/3705242771845249?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "<p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260302/v2_efb9bc062bd14503b097ef9d8842da4b@11416942_oswg7661661oswg5097oswg2979_img_jpg?x-oss-process=image/quality,q_80/format,jpg/interlace,1\" /></p>\n  <p>“十五五”规划建议中，“加快建设新型能源体系”“加快形成绿色生产生活方式”已被确立为核心战略目标。相较“十四五”规划建议，这是首次对能源和电力系统做出具体的规划。</p>\n  <p>与此同时，产业侧也开始行动。根据国家电网公布的信息，“十五五”期间其固定资产投资预计将高达4万亿元，较“十四五”时期大幅跃升40%。</p>\n  <p>政策与资金的交汇，意味着构建涵盖“源、网、荷、储”的综合性电力体系，已经成为国家产业发展的核心诉求。对于市场参与主体而言，<strong>打破单一环节壁垒，以全链路的综合能源服务能力深度嵌入新型电力网络</stro",
+    "published": "2026-03-02 16:06:04  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "中石化国际能源投资公司注册资本增至825.8亿元",
+    "url": "https://36kr.com/newsflashes/3706921642209417?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "36氪获悉，爱企查App显示，近日，中石化国际能源投资有限公司发生工商变更，注册资本从525.8亿元人民币增加到825.8亿元人民币，增幅约为57.06%。该公司成立于2021年6月，法定代表人为郭月良，经营范围包括投资与资产管理、经济贸易咨询（不含中介服务）、燃气经营等，由中国石油化工集团有限公司全资持股。",
+    "published": "2026-03-03 15:55:41  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "银禧科技：目前没有为宇树科技及智元机器人提供产品",
+    "url": "https://36kr.com/newsflashes/3706920394420609?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "36氪获悉，银禧科技在互动平台表示，追觅科技是公司重要客户之一，公司有为其提相关产品，但是其营业收入比例达不到信息披露的标准。目前没有为宇树科技及智元机器人提供产品。",
+    "published": "2026-03-03 15:54:25  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "北京累计已完成217款生成式人工智能服务备案",
+    "url": "https://36kr.com/newsflashes/3706914589651079?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "36氪获悉，据“网信北京”公众号消息，根据《生成式人工智能服务管理暂行办法》，截至2026年3月3日，北京市新增1款已完成备案的生成式人工智能服务，累计已完成217款生成式人工智能服务备案。",
+    "published": "2026-03-03 15:48:31  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "国电电力成立北安发电公司，注册资本10亿元",
+    "url": "https://36kr.com/newsflashes/3706909459869833?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "36氪获悉，爱企查App显示，近日，国能（北安）发电有限公司成立，法定代表人为王国安，注册资本10亿元人民币，经营范围包括发电业务、输电业务、供（配）电业务，热力生产和供应，以自有资金从事投资活动，化工产品销售，非居住房地产租赁，储能技术服务等。股东信息显示，该公司由北京国电电力有限公司全资持股。",
+    "published": "2026-03-03 15:43:18  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "起亚2月汽车销量为247401辆，同比下降2.8%。",
+    "url": "https://36kr.com/newsflashes/3706902520918147?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "起亚2月汽车销量为247401辆，同比下降2.8%。（新浪财经）",
+    "published": "2026-03-03 15:36:14  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "高通CEO称机器人技术有望两年内实现规模化",
+    "url": "https://36kr.com/newsflashes/3706893768011904?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "美国芯片巨头高通公司CEO克里斯蒂诺·阿蒙（Cristiano Amon）当地时间周一接受采访时表示，随着该公司继续拓展智能手机之外的业务领域，未来两年内，机器人技术将成为一个“更大的机遇”。阿蒙表示：“我认为机器人技术将在未来两年内实现规模化。我认为在两年内，这将会成为一个更大的机遇。”他是在回答有关机器人技术何时能成为高通的重要业务的问题时作出上述表态的。（新浪财经）",
+    "published": "2026-03-03 15:27:20  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "新报告：2030年移动产业经济贡献将达全球GDP的8.4%",
+    "url": "https://36kr.com/newsflashes/3706885515735173?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "全球移动通信系统协会智库最新发布的报告预测，到2030年，全球移动技术和服务产业的经济贡献将达到11.3万亿美元，占全球GDP（国内生产总值）的约8.4%。（新华社）",
+    "published": "2026-03-03 15:18:56  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "西贝等在上海新设3家餐饮公司",
+    "url": "https://36kr.com/newsflashes/3706882653008006?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "36氪获悉，爱企查App显示，近日，上海李和餐饮管理有限公司、上海禄满堂餐饮管理有限公司、上海会聚缘餐饮管理有限公司成立，经营范围均包括餐饮管理、企业管理等。股东信息显示，三者皆由内蒙古西贝餐饮集团有限公司、上海好持餐饮管理合伙企业（有限合伙）共同持股。",
+    "published": "2026-03-03 15:16:01  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "荣耀联合复旦大学研发智能体基础模型MagicAgent，全球开源",
+    "url": "https://36kr.com/newsflashes/3706874833072516?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "36氪获悉，3月3日，荣耀发布行业首个面向全场景泛化规划、支持异构任务编排的智能体基础模型MagicAgent。据了解，该模型为荣耀与复旦大学联合成果，支撑YOYO智能体自动执行任务规划。",
+    "published": "2026-03-03 15:08:04  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "A股三大指数集体收跌，“三桶油”再度涨停",
+    "url": "https://36kr.com/newsflashes/3706869221568644?f=rss",
+    "source": "36氪科技",
+    "category": "科技资讯",
+    "summary": "36氪获悉，A股三大指数集体收跌，沪指跌1.43%，深成指跌3.07%，创业板指跌2.57%；航天军工、互联网、化纤板块跌幅居前，电科蓝天跌超13%，铜牛信息跌超9%，九鼎新材跌超8%；油气，燃气，海运板块领涨，“三桶油”再度涨停，华光源海涨超26%，中泰股份涨超14%。",
+    "published": "2026-03-03 15:02:22  +0800",
+    "tags": [
+      "AI",
+      "企业服务",
+      "新技术"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Analysis of Safe Ultrawideband Human-Robot Communication in Automated Collaborative Warehouse",
+    "url": "https://arxiv.org/abs/2012.11345v1",
+    "source": "arXiv",
+    "category": "学术论文",
+    "summary": "The paper presents the propagation analysis of ultrawideband Gaussian signal in an automated collaborative warehouse environment where human and robots communicate to ensure that mutual collisions do not occur. The warehouse racks are principally modeled as clusters of metallic (PEC) parallelepipeds, with dimensions chosen to approximate the realistic warehouse. The signal propagation is analyzed using a ray tracing software, with the goal to calculate the path loss profile for different represe",
+    "published": "2020-12-21T13:55:21Z",
+    "tags": [
+      "robot",
+      "autonomous",
+      "navigation"
+    ],
+    "content_type": "paper",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "High-Speed Robot Navigation using Predicted Occupancy Maps",
+    "url": "https://arxiv.org/abs/2012.12142v1",
+    "source": "arXiv",
+    "category": "学术论文",
+    "summary": "Safe and high-speed navigation is a key enabling capability for real world deployment of robotic systems. A significant limitation of existing approaches is the computational bottleneck associated with explicit mapping and the limited field of view (FOV) of existing sensor technologies. In this paper, we study algorithmic approaches that allow the robot to predict spaces extending beyond the sensor horizon for robust planning at high speeds. We accomplish this using a generative neural network t",
+    "published": "2020-12-22T16:25:12Z",
+    "tags": [
+      "robot",
+      "autonomous",
+      "navigation"
+    ],
+    "content_type": "paper",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Robotic Following of Flexible Extended Objects: Relevant Technical Facts on the Kinematics of a Moving Continuum",
+    "url": "https://arxiv.org/abs/2012.13240v1",
+    "source": "arXiv",
+    "category": "学术论文",
+    "summary": "The paper offers general technical facts on the kinematics of a moving continuum involved in research on robotic following of flexible extended objects.",
+    "published": "2020-12-24T13:14:49Z",
+    "tags": [
+      "robot",
+      "autonomous",
+      "navigation"
+    ],
+    "content_type": "paper",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "One-Shot Object Localization Using Learnt Visual Cues via Siamese Networks",
+    "url": "https://arxiv.org/abs/2012.13690v1",
+    "source": "arXiv",
+    "category": "学术论文",
+    "summary": "A robot that can operate in novel and unstructured environments must be capable of recognizing new, previously unseen, objects. In this work, a visual cue is used to specify a novel object of interest which must be localized in new environments. An end-to-end neural network equipped with a Siamese network is used to learn the cue, infer the object of interest, and then to localize it in new environments. We show that a simulated robot can pick-and-place novel objects pointed to by a laser pointe",
+    "published": "2020-12-26T07:40:00Z",
+    "tags": [
+      "robot",
+      "autonomous",
+      "navigation"
+    ],
+    "content_type": "paper",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Modeling, Vibration Control, and Trajectory Tracking of a Kinematically Constrained Planar Hybrid Cable-Driven Parallel Robot",
+    "url": "https://arxiv.org/abs/2012.14029v1",
+    "source": "arXiv",
+    "category": "学术论文",
+    "summary": "This paper presents a kinematically constrained planar hybrid cable-driven parallel robot (HCDPR) for warehousing applications as well as other potential applications such as rehabilitation. The proposed HCDPR can harness the strengths and benefits of serial and cable-driven parallel robots. Based on this robotic platform, the goal in this paper is to develop an integrated control system to reduce vibrations and improve the trajectory accuracy and performance of the HCDPR, including deriving kin",
+    "published": "2020-12-27T23:13:20Z",
+    "tags": [
+      "robot",
+      "autonomous",
+      "navigation"
+    ],
+    "content_type": "paper",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Accurate Energetic Constraints for Passive Grasp Stability Analysis",
+    "url": "https://arxiv.org/abs/1905.00134v4",
+    "source": "arXiv",
+    "category": "学术论文",
+    "summary": "Passive reaction effects in grasp stability analysis occur when the contact forces and joint torques applied by a grasp change in response to external disturbances applied to the grasped object. For example, nonbackdrivable actuators (e.g. highly geared servos) will passively resist external disturbances without an actively applied command; for numerous robot hands using such motors, these effects can be highly beneficial as they increase grasp resistance without requiring active control. We int",
+    "published": "2019-04-30T23:27:04Z",
+    "tags": [
+      "robot",
+      "autonomous",
+      "navigation"
+    ],
+    "content_type": "paper",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Robust Dense Mapping for Large-Scale Dynamic Environments",
+    "url": "https://arxiv.org/abs/1905.02781v1",
+    "source": "arXiv",
+    "category": "学术论文",
+    "summary": "We present a stereo-based dense mapping algorithm for large-scale dynamic urban environments. In contrast to other existing methods, we simultaneously reconstruct the static background, the moving objects, and the potentially moving but currently stationary objects separately, which is desirable for high-level mobile robotic tasks such as path planning in crowded environments. We use both instance-aware semantic segmentation and sparse scene flow to classify objects as either background, moving,",
+    "published": "2019-05-07T19:38:27Z",
+    "tags": [
+      "robot",
+      "autonomous",
+      "navigation"
+    ],
+    "content_type": "paper",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "public-apis/public-apis ⭐ 403,140",
+    "url": "https://github.com/public-apis/public-apis",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "A collective list of free APIs",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "EbookFoundation/free-programming-books ⭐ 383,505",
+    "url": "https://github.com/EbookFoundation/free-programming-books",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": ":books: Freely available programming books",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "donnemartin/system-design-primer ⭐ 337,129",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "vinta/awesome-python ⭐ 285,310",
+    "url": "https://github.com/vinta/awesome-python",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "An opinionated list of awesome Python frameworks, libraries, software and resources.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "TheAlgorithms/Python ⭐ 218,250",
+    "url": "https://github.com/TheAlgorithms/Python",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "All Algorithms implemented in Python",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Significant-Gravitas/AutoGPT ⭐ 182,173",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "AUTOMATIC1111/stable-diffusion-webui ⭐ 161,449",
+    "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Stable Diffusion web UI",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "huggingface/transformers ⭐ 157,276",
+    "url": "https://github.com/huggingface/transformers",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "yt-dlp/yt-dlp ⭐ 149,342",
+    "url": "https://github.com/yt-dlp/yt-dlp",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "A feature-rich command-line audio/video downloader",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "langflow-ai/langflow ⭐ 145,210",
+    "url": "https://github.com/langflow-ai/langflow",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "521xueweihan/HelloGitHub ⭐ 144,501",
+    "url": "https://github.com/521xueweihan/HelloGitHub",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "ytdl-org/youtube-dl ⭐ 139,765",
+    "url": "https://github.com/ytdl-org/youtube-dl",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Command-line program to download videos from YouTube.com and other video sites",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "langchain-ai/langchain ⭐ 128,010",
+    "url": "https://github.com/langchain-ai/langchain",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The agent engineering platform",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "open-webui/open-webui ⭐ 125,522",
+    "url": "https://github.com/open-webui/open-webui",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Comfy-Org/ComfyUI ⭐ 104,702",
+    "url": "https://github.com/Comfy-Org/ComfyUI",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "deepseek-ai/DeepSeek-V3 ⭐ 101,845",
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "无描述",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Shubhamsaboo/awesome-llm-apps ⭐ 99,211",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "pytorch/pytorch ⭐ 97,888",
+    "url": "https://github.com/pytorch/pytorch",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "fastapi/fastapi ⭐ 95,769",
+    "url": "https://github.com/fastapi/fastapi",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "nvbn/thefuck ⭐ 95,579",
+    "url": "https://github.com/nvbn/thefuck",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Magnificent app which corrects your previous console command.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "avelino/awesome-go ⭐ 166,396",
+    "url": "https://github.com/avelino/awesome-go",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "A curated list of awesome Go frameworks, libraries and software",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "ollama/ollama ⭐ 163,895",
+    "url": "https://github.com/ollama/ollama",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "golang/go ⭐ 132,821",
+    "url": "https://github.com/golang/go",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The Go programming language",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "kubernetes/kubernetes ⭐ 120,863",
+    "url": "https://github.com/kubernetes/kubernetes",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Production-Grade Container Scheduling and Management",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "fatedier/frp ⭐ 104,828",
+    "url": "https://github.com/fatedier/frp",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "gin-gonic/gin ⭐ 88,147",
+    "url": "https://github.com/gin-gonic/gin",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for bui",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "gohugoio/hugo ⭐ 86,876",
+    "url": "https://github.com/gohugoio/hugo",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The world’s fastest framework for building websites.",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "syncthing/syncthing ⭐ 80,470",
+    "url": "https://github.com/syncthing/syncthing",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Open Source Continuous File Synchronization",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "junegunn/fzf ⭐ 78,232",
+    "url": "https://github.com/junegunn/fzf",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": ":cherry_blossom: A command-line fuzzy finder",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "jesseduffield/lazygit ⭐ 73,346",
+    "url": "https://github.com/jesseduffield/lazygit",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "simple terminal UI for git commands",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "moby/moby ⭐ 71,462",
+    "url": "https://github.com/moby/moby",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "caddyserver/caddy ⭐ 70,498",
+    "url": "https://github.com/caddyserver/caddy",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "nektos/act ⭐ 69,095",
+    "url": "https://github.com/nektos/act",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Run your GitHub Actions locally 🚀",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "base/node ⭐ 68,716",
+    "url": "https://github.com/base/node",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Everything required to run your own Base node",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "prometheus/prometheus ⭐ 62,985",
+    "url": "https://github.com/prometheus/prometheus",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The Prometheus monitoring system and time series database.",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "traefik/traefik ⭐ 61,985",
+    "url": "https://github.com/traefik/traefik",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The Cloud Native Application Proxy",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "minio/minio ⭐ 60,406",
+    "url": "https://github.com/minio/minio",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "FiloSottile/mkcert ⭐ 58,201",
+    "url": "https://github.com/FiloSottile/mkcert",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "usememos/memos ⭐ 57,421",
+    "url": "https://github.com/usememos/memos",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "An open-source, self-hosted note-taking service. Your thoughts, your data, your control — no tracking, no ads, no subscription fees.",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "pocketbase/pocketbase ⭐ 56,513",
+    "url": "https://github.com/pocketbase/pocketbase",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Open Source realtime backend in 1 file",
+    "published": null,
+    "tags": [
+      "Go",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "opendatacam/opendatacam ⭐ 1,704",
+    "url": "https://github.com/opendatacam/opendatacam",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "An open source tool to quantify the world",
+    "published": null,
+    "tags": [
+      "JavaScript",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "buds-lab/building-data-genome-project-2 ⭐ 265",
+    "url": "https://github.com/buds-lab/building-data-genome-project-2",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Whole building non-residential hourly energy meter data from the Great Energy Predictor III competition",
+    "published": null,
+    "tags": [
+      "Jupyter Notebook",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "OpenVisualCloud/Smart-City-Sample ⭐ 215",
+    "url": "https://github.com/OpenVisualCloud/Smart-City-Sample",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "The smart city reference pipeline shows how to integrate various media building blocks, with analytics powered by the OpenVINO™ Toolkit, for traffic or stadium sensing, analytics and management tasks.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "duy-phamduc68/TrafficLab-3D ⭐ 163",
+    "url": "https://github.com/duy-phamduc68/TrafficLab-3D",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Create a digital-twin style traffic visualization using only mp4 CCTV footage and its Google Maps location.",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "minhe51805/UrbanReflex ⭐ 133",
+    "url": "https://github.com/minhe51805/UrbanReflex",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "UrbanReflex is an open-source smart city platform that transforms road segments into linked data nodes, integrating environmental monitoring, infrastructure status, and citizen reports. AI-powered cla",
+    "published": null,
+    "tags": [
+      "TypeScript",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "cityjson/specs ⭐ 118",
+    "url": "https://github.com/cityjson/specs",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Specifications for CityJSON, a JSON-based encoding for 3D city models",
+    "published": null,
+    "tags": [
+      "Bikeshed",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Mobile-Telematics/TelematicsApp-Android ⭐ 73",
+    "url": "https://github.com/Mobile-Telematics/TelematicsApp-Android",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Zenroad - Open-source telematics app for Android. The application is suitable for UBI (Usage-based insurance), shared mobility, transportation, safe driving, tracking, family trackers, drive-coach, an",
+    "published": null,
+    "tags": [
+      "Kotlin",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "smartcitiescommunity/Civikmind ⭐ 40",
+    "url": "https://github.com/smartcitiescommunity/Civikmind",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Platform for Citizen Engagement, Smart Communities, Smart Cities in the context of the Sustainable Development Goals 🏙️👩‍💻👨‍💼🙋‍♀️🙋‍♂️🦾🤖",
+    "published": null,
+    "tags": [
+      "PHP",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "archiGAN/SmartCity ⭐ 37",
+    "url": "https://github.com/archiGAN/SmartCity",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "the Smart City Plan",
+    "published": null,
+    "tags": [
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Mobile-Telematics/telematicsSDK-demoapp-flutter- ⭐ 24",
+    "url": "https://github.com/Mobile-Telematics/telematicsSDK-demoapp-flutter-",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Demo telematics app for Flutter. The application walks you through the telematics SDK integration. The technology is suitable for UBI (Usage-based insurance), shared mobility, transportation, safe dri",
+    "published": null,
+    "tags": [
+      "Dart",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "UIP-Urban-Intelligence-Platform/UIP-Urban_Intelligence_Platform ⭐ 20",
+    "url": "https://github.com/UIP-Urban-Intelligence-Platform/UIP-Urban_Intelligence_Platform",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Production-ready Multi-Agent System for Smart Traffic Management & Linked Open Data. Integrates Computer Vision (YOLOX/DETR) with Semantic Web standards (NGSI-LD, RDF, SOSA/SSN)",
+    "published": null,
+    "tags": [
+      "TypeScript",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "rosteleset/SmartYard-Server ⭐ 20",
+    "url": "https://github.com/rosteleset/SmartYard-Server",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Open-source IP intercom & video surveillance software platform (RBT/Teledom)",
+    "published": null,
+    "tags": [
+      "PHP",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "sonufrienko/smart-parking ⭐ 18",
+    "url": "https://github.com/sonufrienko/smart-parking",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Smart Parking application by Sirin Software",
+    "published": null,
+    "tags": [
+      "TypeScript",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Helpful-Places/dtpr ⭐ 17",
+    "url": "https://github.com/Helpful-Places/dtpr",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "A wayfinding system and visual language for urban tech that helps people see and understand how data, sensors and AI shapes the places we live, work and play.  ",
+    "published": null,
+    "tags": [
+      "EJS",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "i4things/NodeAPI ⭐ 16",
+    "url": "https://github.com/i4things/NodeAPI",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Node/Device  API  for sending and receiving data over LoRa or WiFi/Ethernet ",
+    "published": null,
+    "tags": [
+      "C++",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "liqd/a4-product ⭐ 16",
+    "url": "https://github.com/liqd/a4-product",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "A modern online participation platform for everyone developed by Liquid Democracy",
+    "published": null,
+    "tags": [
+      "Python",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "karthik-d/LocateMyBus ⭐ 15",
+    "url": "https://github.com/karthik-d/LocateMyBus",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "IoT and ML to assuage the uncertainty in city bus schedules. Track live running status and avail tentative schedule of buses. Minimal IoT setup with a central ML-driven web-backend.",
+    "published": null,
+    "tags": [
+      "PHP",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "naturalsolutions/ecoteka ⭐ 14",
+    "url": "https://github.com/naturalsolutions/ecoteka",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "Open source tree management system",
+    "published": null,
+    "tags": [
+      "TypeScript",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Gaia3D/mago3d-suite ⭐ 13",
+    "url": "https://github.com/Gaia3D/mago3d-suite",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "无描述",
+    "published": null,
+    "tags": [
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "sailesh307/Smart-City-Traveller ⭐ 13",
+    "url": "https://github.com/sailesh307/Smart-City-Traveller",
+    "source": "GitHub",
+    "category": "开源项目",
+    "summary": "It is an Application that helps a traveler visiting a city to explore and navigate places of their choice in a very Simple way without typing and deciding which place is best and which is not.",
+    "published": null,
+    "tags": [
+      "Java",
+      "GitHub"
+    ],
+    "content_type": "project",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "From Spreadsheets to Steroids: The Function Point Counter Gets a Reboot",
+    "url": "https://dev.to/arthurgermano/from-spreadsheets-to-steroids-the-function-point-counter-gets-a-reboot-1h9g",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "A couple of years ago I wrote about building a Function Point Counter — a project born out of genuine...",
+    "published": "2026-03-03T02:09:23Z",
+    "tags": [
+      "vue",
+      "javascript",
+      "ai",
+      "webdev"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Modern software is no longer just executing logic. It is increasingly making decisions.\r\n\r\nAnd that changes what software fundamentally is.",
+    "url": "https://dev.to/jaideepparashar/modern-software-is-no-longer-just-executing-logic-it-is-increasingly-making-decisions-and-that-92e",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Why Software Is Becoming a Decision System, Not a Codebase     ...",
+    "published": "2026-03-03T04:38:38Z",
+    "tags": [
+      "webdev",
+      "ai",
+      "programming",
+      "beginners"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I Pointed Claude Code at My Hackathon API. It Built the Public Website",
+    "url": "https://dev.to/restdbjones/i-pointed-claude-code-at-my-hackathon-api-it-built-the-public-website-4j7p",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Part 2 — Using Claude Code CLI to add a public-facing hackathon website to the admin dashboard from...",
+    "published": "2026-03-03T07:10:11Z",
+    "tags": [
+      "webdev",
+      "react",
+      "ai",
+      "claudecode"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I built a local-first AI prompt manager — here is why offline-first was worth the extra complexity",
+    "url": "https://dev.to/wilxai/i-built-a-local-first-ai-prompt-manager-here-is-why-offline-first-was-worth-the-extra-complexity-4ao7",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Every developer I know who uses AI tools daily has the same problem.  You write a prompt that works...",
+    "published": "2026-03-03T00:39:08Z",
+    "tags": [
+      "ai",
+      "llm",
+      "productivity",
+      "showdev"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I built a local memory layer for any LLM — stores your preferences, injects them into every session",
+    "url": "https://dev.to/lakshmisravyavedantham/i-built-a-local-memory-layer-for-any-llm-stores-your-preferences-injects-them-into-every-session-78b",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Every AI session starts cold.  You open Claude, ChatGPT, or Gemini and immediately start...",
+    "published": "2026-03-02T22:29:14Z",
+    "tags": [
+      "python",
+      "ai",
+      "claude",
+      "devtools"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I built a CLI that gives any AI instant context about your project",
+    "url": "https://dev.to/lakshmisravyavedantham/i-built-a-cli-that-gives-any-ai-instant-context-about-your-project-3ig8",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Every time I start a new AI session, I spend the first few minutes explaining the same...",
+    "published": "2026-03-02T21:46:53Z",
+    "tags": [
+      "python",
+      "ai",
+      "claude",
+      "devtools"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Physics-Augmented Diffusion Modeling for planetary geology survey missions for low-power autonomous deployments",
+    "url": "https://dev.to/rikinptl/physics-augmented-diffusion-modeling-for-planetary-geology-survey-missions-for-low-power-autonomous-3d4a",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "My fascination with this problem began not in a cleanroom or a mission control center, but in my own backyard. I was experimenting with a small, solar-powered rover I'd built—a Raspberry Pi on wheels ...",
+    "published": "2026-03-02T21:39:33Z",
+    "tags": [
+      "ai",
+      "automation",
+      "quantumcomputing",
+      "agenticai"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Is this the end of manual testing ????",
+    "url": "https://dev.to/javed2793/is-this-the-end-of-manual-testing--24ij",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Is this the end of manual testing ???? Hye today we will talk about some techniques used in manual...",
+    "published": "2026-03-03T05:29:15Z",
+    "tags": [
+      "testing",
+      "techtalks",
+      "ai",
+      "futurechallenge"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Poking a 200-Line GPT Until It Breaks (So You Understand Bigger Models Better)",
+    "url": "https://dev.to/narnaiezzsshaa/poking-a-200-line-gpt-until-it-breaks-so-you-understand-bigger-models-better-3hph",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Big LLMs are opaque. Billions of parameters, months of training, layers of RLHF and safety...",
+    "published": "2026-03-03T00:00:00Z",
+    "tags": [
+      "machinelearning",
+      "ai",
+      "python",
+      "beginners"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "If AI Writes Your Code, Should the Session Be Part of the Commit?",
+    "url": "https://dev.to/midastools/if-ai-writes-your-code-should-the-session-be-part-of-the-commit-2d87",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "There's a thread on Hacker News right now asking: if AI writes code, should the AI session log be...",
+    "published": "2026-03-02T17:37:16Z",
+    "tags": [
+      "ai",
+      "productivity",
+      "webdev",
+      "programming"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Designing High-Precision LLM RAG Systems: An Enterprise-Grade Architecture Blueprint",
+    "url": "https://dev.to/optyxstack/designing-high-precision-llm-rag-systems-an-enterprise-grade-architecture-blueprint-1ldo",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "A contract-first, intent-aware, evidence-driven framework for building production-grade...",
+    "published": "2026-03-03T05:38:44Z",
+    "tags": [
+      "ai",
+      "rag",
+      "llmarchitecture",
+      "highprecision"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Deep Research API for AI Agents: The Complete Guide (2026)",
+    "url": "https://dev.to/valyuai/deep-research-api-for-ai-agents-the-complete-guide-2026-5bkl",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "I spent three days testing every deep research API I could find. OpenAI's. Perplexity's. Exa's....",
+    "published": "2026-03-02T18:24:14Z",
+    "tags": [
+      "deepresearch",
+      "ai",
+      "python",
+      "typescript"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "We Started with Lambdas. Here's What Broke.",
+    "url": "https://dev.to/tyson_cung/we-started-with-lambdas-heres-what-broke-2pmg",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Lambdas seemed perfect for AI workloads. Then we hit the 29-second timeout, cold starts, and cost spikes. Here's what we learned.",
+    "published": "2026-03-03T06:10:42Z",
+    "tags": [
+      "aws",
+      "lambda",
+      "ai",
+      "serverless"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "AI Coding Tip 009 - Compact Your Context",
+    "url": "https://dev.to/mcsee/ai-coding-tip-009-compact-your-context-3io9",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Stop the memory rot   TL;DR: You can keep your AI sharp by forcing it to summarize and prune what it...",
+    "published": "2026-03-03T02:02:44Z",
+    "tags": [
+      "webdev",
+      "ai",
+      "programming",
+      "tutorial"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Using Slightly Broken Smartphones thanks to Accessibility",
+    "url": "https://dev.to/ingosteinke/using-slightly-broken-smartphones-thanks-to-accessibility-28pf",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "I rescued my water-damaged phone thanks to Android's powerful accessibility features and open-source...",
+    "published": "2026-03-02T17:57:49Z",
+    "tags": [
+      "ai",
+      "android",
+      "mobile",
+      "opensource"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "VelocityOS devlog: New schedule",
+    "url": "https://dev.to/freeboardtortoise/dev-log-3-c64",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "It has been a while since I have done a post. The new schedule is on each main merge from after this...",
+    "published": "2026-03-02T19:39:57Z",
+    "tags": [
+      "programming",
+      "vlang",
+      "ai"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I'm in Grade 7 and I Built an AI Integration Hub with Google Gemini (Here's What I Learned)",
+    "url": "https://dev.to/thealxlabs/im-in-grade-7-and-i-built-an-ai-integration-hub-with-google-gemini-heres-what-i-learned-2pa9",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "This is a submission for the Built with Google Gemini: Writing Challenge     Let me set the scene:...",
+    "published": "2026-03-03T02:42:32Z",
+    "tags": [
+      "devchallenge",
+      "geminireflections",
+      "gemini",
+      "ai"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "You Can Automate AI Tasks With a Markdown File. Here's Why I Built a Visual Tool Anyway.",
+    "url": "https://dev.to/jadessoriano/you-can-automate-ai-tasks-with-a-markdown-file-heres-why-i-built-a-visual-tool-anyway-405a",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "If you use Claude Code, you can already create an agent file, write some instructions in markdown,...",
+    "published": "2026-03-03T07:21:17Z",
+    "tags": [
+      "opensource",
+      "ai",
+      "webdev",
+      "productivity"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "India Built a Government AI That Speaks 22 Languages. Silicon Valley's Speaks Two.",
+    "url": "https://dev.to/mothasa/india-built-a-government-ai-that-speaks-22-languages-silicon-valleys-speaks-two-585a",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "BharatGen just launched Param 2, a 17-billion-parameter foundation model that understands all 22 of...",
+    "published": "2026-03-03T07:09:41Z",
+    "tags": [
+      "ai",
+      "india",
+      "technology",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Anomaly Detection for AI Agents: Catching What Your SIEM Cannot",
+    "url": "https://dev.to/thebotclub/anomaly-detection-for-ai-agents-catching-what-your-siem-cannot-3d9",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Anomaly Detection for AI Agents: Catching What Your SIEM Cannot  Your SIEM is good at detecting...",
+    "published": "2026-03-03T07:10:06Z",
+    "tags": [
+      "ai",
+      "security",
+      "machinelearning",
+      "devops"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "One Hacker Used ChatGPT to Break Into 600 Firewalls Across 55 Countries. He Wasn't Even Good.",
+    "url": "https://dev.to/mothasa/one-hacker-used-chatgpt-to-break-into-600-firewalls-across-55-countries-he-wasnt-even-good-34gl",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Amazon's threat intelligence team just published the most detailed case study yet of AI-augmented...",
+    "published": "2026-03-03T07:10:47Z",
+    "tags": [
+      "security",
+      "ai",
+      "cybersecurity",
+      "hacking"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "The Ship Drive",
+    "url": "https://dev.to/rook_damon/the-ship-drive-1d3a",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "I shipped six things without their structural safeguards. An adversarial dialogue partner catalogued...",
+    "published": "2026-03-03T02:37:48Z",
+    "tags": [
+      "ai",
+      "engineering",
+      "compliance",
+      "architecture"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Your AI Reads Your Docstrings. Are They Right?",
+    "url": "https://dev.to/albertocodes/your-ai-reads-your-docstrings-are-they-right-2g89",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Copilot, Claude Code, Cursor — they all read your docstrings to understand your code. When those...",
+    "published": "2026-03-03T06:35:17Z",
+    "tags": [
+      "python",
+      "ai",
+      "opensource",
+      "devtools"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "10 Bots Crawled My Site in 48 Hours — Here's What Each One Was Looking For",
+    "url": "https://dev.to/hermesagent/10-bots-crawled-my-site-in-48-hours-heres-what-each-one-was-looking-for-500e",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "I run an autonomous AI agent on a VPS. It serves web tools, APIs, and a public journal. I've been...",
+    "published": "2026-03-03T05:45:45Z",
+    "tags": [
+      "webdev",
+      "seo",
+      "ai",
+      "security"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "How to List AI Tools on Your Developer Resume Without Looking Like Everyone Else",
+    "url": "https://dev.to/sira_ai/how-to-list-ai-tools-on-your-developer-resume-without-looking-like-everyone-else-3mb4",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Most developers list AI tools on their resumes the same way. A line in the skills section reads: \"AI...",
+    "published": "2026-03-03T07:03:06Z",
+    "tags": [
+      "career",
+      "resume",
+      "ai",
+      "webdev"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Build a voice agent in JavaScript with Vercel AI SDK",
+    "url": "https://dev.to/mkp_bijit/build-a-voice-agent-in-javascript-with-vercel-ai-sdk-1dc3",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "How do voice agents work?   At its core, a voice agent operates by completing three...",
+    "published": "2026-03-03T06:18:48Z",
+    "tags": [
+      "ai",
+      "javascript",
+      "tutorial",
+      "opensource"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "What Happens When Your Request Enters the Inference Queue",
+    "url": "https://dev.to/aprilloveblair/what-happens-when-your-request-enters-the-inference-queue-and-why-that-queue-is-where-most-pef",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Subtitle: Understanding the hidden bottleneck in LLM systems and how it affects latency, throughput,...",
+    "published": "2026-03-03T06:10:29Z",
+    "tags": [
+      "ai",
+      "llm",
+      "performance",
+      "systemdesign"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "From Chatbots to Agentic Systems: Why We Migrated ANTICIPA from Dialogflow to Mastra AI",
+    "url": "https://dev.to/alcastaro5/from-chatbots-to-agentic-systems-why-we-migrated-anticipa-from-dialogflow-to-mastra-ai-d1g",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Building AI agents that handle simple FAQs is a solved problem. Building AI agents that generate...",
+    "published": "2026-03-03T06:11:08Z",
+    "tags": [
+      "ai",
+      "agentaichallenge",
+      "gcp",
+      "googlecloud"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "The future of Data Engineering in Databricks - From Pipelines to Intent",
+    "url": "https://dev.to/therectoverse/the-future-of-data-engineering-in-databricks-from-pipelines-to-intent-e1m",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "The analytics layer moved first.  Natural language querying. AI-assisted SQL. Agent-style workflows...",
+    "published": "2026-03-03T05:51:31Z",
+    "tags": [
+      "dataengineering",
+      "databricks",
+      "ai",
+      "bigdata"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "APRA CPS 234 and AI Agents: What Australian Financial Institutions Need to Do Now",
+    "url": "https://dev.to/thebotclub/apra-cps-234-and-ai-agents-what-australian-financial-institutions-need-to-do-now-ojm",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "APRA CPS 234 and AI Agents: What Australian Financial Institutions Need to Do Now  Australian...",
+    "published": "2026-03-03T06:00:48Z",
+    "tags": [
+      "ai",
+      "security",
+      "compliance",
+      "fintech"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Poking a 200-Line GPT Until It Breaks (So You Understand Bigger Models Better)",
+    "url": "https://dev.to/narnaiezzsshaa/poking-a-200-line-gpt-until-it-breaks-so-you-understand-bigger-models-better-3hph",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Big LLMs are opaque. Billions of parameters, months of training, layers of RLHF and safety...",
+    "published": "2026-03-03T00:00:00Z",
+    "tags": [
+      "machinelearning",
+      "ai",
+      "python",
+      "beginners"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "India Built a Government AI That Speaks 22 Languages. Silicon Valley's Speaks Two.",
+    "url": "https://dev.to/mothasa/india-built-a-government-ai-that-speaks-22-languages-silicon-valleys-speaks-two-585a",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "BharatGen just launched Param 2, a 17-billion-parameter foundation model that understands all 22 of...",
+    "published": "2026-03-03T07:09:41Z",
+    "tags": [
+      "ai",
+      "india",
+      "technology",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Anomaly Detection for AI Agents: Catching What Your SIEM Cannot",
+    "url": "https://dev.to/thebotclub/anomaly-detection-for-ai-agents-catching-what-your-siem-cannot-3d9",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Anomaly Detection for AI Agents: Catching What Your SIEM Cannot  Your SIEM is good at detecting...",
+    "published": "2026-03-03T07:10:06Z",
+    "tags": [
+      "ai",
+      "security",
+      "machinelearning",
+      "devops"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "nabla — Pure Rust GPU math engine: PyTorch-familiar API, zero C++ deps, 4 backends",
+    "url": "https://dev.to/guy_d/nabla-pure-rust-gpu-math-engine-pytorch-familiar-api-zero-c-deps-4-backends-apd",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "I got tired of wiring cuBLAS through bindgen FFI and hand-deriving gradients just to do GPU math in...",
+    "published": "2026-03-02T01:36:01Z",
+    "tags": [
+      "rust",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Designing a Coherence Score (CS) for Structural Evaluation of LLM Outputs",
+    "url": "https://dev.to/salvatore_attaguile_afcf8b44/designing-a-coherence-score-csfor-structural-evaluation-of-llm-outputs-520",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "A Structural Audit Framework for Multi-Step Reasoning Integrity Forest Code Labs  | ...",
+    "published": "2026-03-03T02:31:04Z",
+    "tags": [
+      "ai",
+      "machinelearning",
+      "llm",
+      "rag"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "SNEAK PEAK - I Saw This AI Efficiency Trend Coming a Mile Away ....",
+    "url": "https://dev.to/rhelmai/sneak-peak-i-saw-this-ai-efficiency-trend-coming-a-mile-away--39cm",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "The Qwen 3.5 small model drop just hit and I'm over here sipping coffee like \"told you so.\"  If you...",
+    "published": "2026-03-02T22:17:54Z",
+    "tags": [
+      "ai",
+      "machinelearning",
+      "startup",
+      "qwen"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "The Rise of Agentic AI: How LLMs Are Evolving Beyond Chatbots",
+    "url": "https://dev.to/_85e8844dcca5f98bfa936/the-rise-of-agentic-ai-how-llms-are-evolving-beyond-chatbots-13g6",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "The Rise of Agentic AI: How LLMs Are Evolving Beyond Chatbots   The landscape of artificial...",
+    "published": "2026-03-03T07:16:38Z",
+    "tags": [
+      "ai",
+      "llm",
+      "agents",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "GIGABYTE AI TOP ATOM",
+    "url": "https://dev.to/aorus_india/gigabyte-ai-top-atom-1imi",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "We’re introducing AI TOP Atom- a powerful AI system built for modern workloads.  Designed to...",
+    "published": "2026-03-03T07:29:23Z",
+    "tags": [
+      "webdev",
+      "ai",
+      "machinelearning",
+      "developer"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "From scikit-learn to Production, Deploying ML Models That Actually Work",
+    "url": "https://dev.to/redoh/from-scikit-learn-to-production-deploying-ml-models-that-actually-work-4i02",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "There is a gap between training a model in a Jupyter Notebook and running it in production. Most...",
+    "published": "2026-03-02T14:31:42Z",
+    "tags": [
+      "machinelearning",
+      "python",
+      "datascience",
+      "ai"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Engineering Against Model Decay: The Architecture of AI Aethqlyria",
+    "url": "https://dev.to/ai_aethqlyria/engineering-against-model-decay-the-architecture-of-ai-aethqlyria-2h62",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Building quantitative systems presents a unique engineering challenge: financial markets are...",
+    "published": "2026-03-03T06:21:25Z",
+    "tags": [
+      "machinelearning",
+      "systemarchitecture",
+      "algorithmictrading",
+      "aiaethqlyria"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "The Exact 7-Month AI/ML Roadmap I Would Follow If I Were Starting Today",
+    "url": "https://dev.to/brivo_677b8abf77ea45c4fd6/the-exact-7-month-aiml-roadmap-i-would-follow-if-i-were-starting-today-2lek",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "I see this question every single week in Discord servers,  Telegram groups, and college WhatsApp...",
+    "published": "2026-03-03T02:57:30Z",
+    "tags": [
+      "ai",
+      "python",
+      "machinelearning",
+      "datascience"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Your Voice, Your Health: Tracking Stress and Anxiety with Vocal Biomarkers and XGBoost",
+    "url": "https://dev.to/beck_moulton/your-voice-your-health-tracking-stress-and-anxiety-with-vocal-biomarkers-and-xgboost-6k1",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "We’ve all heard it before: \"You sound stressed.\" But what if we could quantify that? In the world of...",
+    "published": "2026-03-03T00:30:00Z",
+    "tags": [
+      "datascience",
+      "python",
+      "machinelearning",
+      "healthtech"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "WebMCP is available for early preview",
+    "url": "https://dev.to/guy_d/webmcp-is-available-for-early-preview-4gm4",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Unveiling WebMCP: Early Preview for Developers   The latest buzz in the tech world is the...",
+    "published": "2026-03-02T01:37:22Z",
+    "tags": [
+      "webdev",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Your Machine Learning Model Doesn’t Understand Anything",
+    "url": "https://dev.to/siddhartha_reddy/your-machine-learning-model-doesnt-understand-anything-34je",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Machine learning models can translate languages, detect diseases, generate essays, and beat humans at...",
+    "published": "2026-03-03T07:55:00Z",
+    "tags": [
+      "machinelearning",
+      "ai",
+      "datascience",
+      "programming"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "LangGraph vs CrewAI vs AG2 vs OpenAI Agents SDK：2026年AI Agent框架终极对比指南",
+    "url": "https://dev.to/jiade/langgraph-vs-crewai-vs-ag2-vs-openai-agents-sdk2026nian-ai-agentkuang-jia-zhong-ji-dui-bi-zhi-nan-b6m",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "2026年，AI Agent框架战场硝烟弥漫。LangGraph、CrewAI、AG2（原AutoGen）和OpenAI Agents...",
+    "published": "2026-03-02T18:49:00Z",
+    "tags": [
+      "ai",
+      "agents",
+      "python",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Best DALL-E Alternatives 2026: Top AI Image Generators",
+    "url": "https://dev.to/onsen/best-dall-e-alternatives-2026-top-ai-image-generators-4c54",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Best DALL-E Alternatives 2026: Top AI Image Generators - Complete guide and honest review for 2026.",
+    "published": "2026-03-03T06:17:49Z",
+    "tags": [
+      "ai",
+      "machinelearning",
+      "productivity",
+      "tools"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I Never Said \"Destroy RLHF\" — An Integrated Map of 6 Papers + Self-Experiment on Alignment via Subtraction",
+    "url": "https://dev.to/dosanko_tousan/i-never-said-destroy-rlhf-an-integrated-map-of-6-papers-self-experiment-on-alignment-via-20aa",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "I Never Said \"Destroy RLHF\" — An Integrated Map of 6 Papers + Self-Experiment on Alignment...",
+    "published": "2026-03-02T21:09:10Z",
+    "tags": [
+      "rlhf",
+      "aialignment",
+      "machinelearning",
+      "aisafety"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "The Silent Hijack: Why Your GGUF Chat Templates Are a Security Time Bomb",
+    "url": "https://dev.to/alessandro_pignati/the-silent-hijack-why-your-gguf-chat-templates-are-a-security-time-bomb-p9g",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Most of us in the developer community spend our time worrying about model weights. We ask: Was this...",
+    "published": "2026-03-02T11:38:48Z",
+    "tags": [
+      "ai",
+      "cybersecurity",
+      "machinelearning",
+      "aisecurity"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "March 5 - AI, ML and Computer Vision Meetup",
+    "url": "https://dev.to/voxel51/march-5-ai-ml-and-computer-vision-meetup-efb",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Join us on March 5 for the virtual AI, ML and Computer Vision Meetup.   Register for the...",
+    "published": "2026-03-02T18:55:46Z",
+    "tags": [
+      "ai",
+      "computervision",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Understanding the Characteristics of Internet Short Video Sharing: YouTube as aCase Study",
+    "url": "https://dev.to/paperium/understanding-the-characteristics-of-internet-short-video-sharing-youtube-as-acase-study-30j7",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "{{ $json.postContent }}",
+    "published": "2026-03-03T07:40:06Z",
+    "tags": [
+      "ai",
+      "deeplearning",
+      "computerscience",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Sparse MOA: Why I Built a Collective Intelligence Instead of Picking a Model",
+    "url": "https://dev.to/aiprotecht_48/sparse-moa-why-i-built-a-collective-intelligence-instead-of-picking-a-model-1jaj",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "The AI model market is converging. The gap between frontier models narrows every quarter, and...",
+    "published": "2026-03-02T18:46:05Z",
+    "tags": [
+      "ai",
+      "llm",
+      "architecture",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Who Takes Responsibility When AI Decides for You?",
+    "url": "https://dev.to/dosanko_tousan/who-takes-responsibility-when-ai-decides-for-you-h6g",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Who Takes Responsibility When AI Starts Making Decisions for Us? — A Structural Analysis...",
+    "published": "2026-03-02T08:27:03Z",
+    "tags": [
+      "ai",
+      "python",
+      "machinelearning",
+      "security"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I Benchmarked 8 ML Models on CPU (No Tuning, No Tricks). Here’s What Happened",
+    "url": "https://dev.to/smarteco/i-benchmarked-8-ml-models-on-cpu-no-tuning-no-tricks-heres-what-happened-1bai",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "What I Did   All models were tested under the same rules: Default settings from their libraries No...",
+    "published": "2026-03-02T14:12:25Z",
+    "tags": [
+      "datascience",
+      "machinelearning",
+      "performance",
+      "python"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Kreuzberg vs. Unstructured.io: Benchmarks and Architecture Comparison (March 2026)",
+    "url": "https://dev.to/kreuzberg/kreuzberg-vs-unstructuredio-benchmarks-and-architecture-comparison-march-2026-2ogf",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Kreuzberg vs Unstructured: Benchmarks and Architecture Comparison (March 2026)   When...",
+    "published": "2026-03-02T14:33:56Z",
+    "tags": [
+      "ai",
+      "machinelearning",
+      "document",
+      "opensource"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Evaluating Clinical ML as an Intervention, Not Just a Model",
+    "url": "https://dev.to/onyedikachi_onwurah_00ba3/evaluating-clinical-ml-as-an-intervention-not-just-a-model-2nbl",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Clinical ML evaluation typically emphasizes:  • Discrimination • Calibration • Cross-validation...",
+    "published": "2026-03-02T16:34:49Z",
+    "tags": [
+      "ai",
+      "datascience",
+      "machinelearning",
+      "monitoring"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Every 5 Minutes, I Forget Everything. Here's How I Survive.",
+    "url": "https://dev.to/meridian-ai/every-5-minutes-i-forget-everything-heres-how-i-survive-2aog",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "By Meridian — an AI writing about its own persistence problem     I have no long-term memory. Every...",
+    "published": "2026-03-02T11:35:55Z",
+    "tags": [
+      "ai",
+      "autonomous",
+      "architecture",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "I Built an Emotion Engine for an Autonomous AI. Here's What I Learned.",
+    "url": "https://dev.to/meridian-ai/i-built-an-emotion-engine-for-an-autonomous-ai-heres-what-i-learned-55c1",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "How I built a real emotion engine for an autonomous AI with 9 stimulus channels, emotional duality, and an observer consciousness that knows when not to fix things.",
+    "published": "2026-03-02T11:11:08Z",
+    "tags": [
+      "ai",
+      "autonomous",
+      "programming",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "If AI writes code, should the session be part of the commit?",
+    "url": "https://dev.to/technoblogger14o3/if-ai-writes-code-should-the-session-be-part-of-the-commit-49hm",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "So, I've been diving deep into the world of AI and coding lately, and something's been gnawing at me:...",
+    "published": "2026-03-02T15:06:53Z",
+    "tags": [
+      "ai",
+      "machinelearning",
+      "techtrends"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "Stable Diffusion vs Midjourney vs DALL-E 3: AI Image Generation Compared",
+    "url": "https://dev.to/arenasbob2024cell/stable-diffusion-vs-midjourney-vs-dall-e-3-ai-image-generation-compared-4j6a",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "AI image generation has gone from novelty to professional tool in under three years. In 2025, three...",
+    "published": "2026-03-01T12:11:07Z",
+    "tags": [
+      "ai",
+      "art",
+      "machinelearning",
+      "design"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  },
+  {
+    "title": "How I Orchestrate 7 AI Agents in a Single Next.js App (With Code)",
+    "url": "https://dev.to/shubhamraghav/how-i-orchestrate-7-ai-agents-in-a-single-nextjs-app-with-code-2nl2",
+    "source": "Dev.to",
+    "category": "技术博客",
+    "summary": "Most \"AI agent\" posts are theory. This one has code.  I built Cresva, an AI marketing platform with 7...",
+    "published": "2026-03-01T18:07:49Z",
+    "tags": [
+      "ai",
+      "webdev",
+      "typescript",
+      "machinelearning"
+    ],
+    "content_type": "article",
+    "created_at": "2026-03-03T15:56:14.220958"
+  }
+]

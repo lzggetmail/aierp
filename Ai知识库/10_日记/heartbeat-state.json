@@ -1,0 +1,16 @@
+{
+  "lastChecks": {
+    "openclaw_version": "v2026.3.13-1",
+    "openclaw_checked": "2026-03-23T02:51Z",
+    "wukong_checked": "2026-03-23T02:51Z",
+    "morning_brief": "2026-03-16",
+    "last_heartbeat": "2026-03-23T02:51Z"
+  },
+  "notes": "晨间简报已改为定时任务。OpenClaw 无新版本（v2026.3.13-1）。钉钉悟空无重大新政策（仍是3月17日发布内容，AI创新工场计划进行中）。",
+  "morningBrief": {
+    "enabled": true,
+    "time": "08:00",
+    "items": ["weather", "tasks", "progress"],
+    "lastSent": "2026-03-16T08:37Z"
+  }
+}
